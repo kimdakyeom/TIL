@@ -69,13 +69,13 @@
 >
 > 기존 텍스트 에디터, IDE 뿐만 아니라 마크다운 전용 에디터를 활용하여 문서를 작성하는 프로그램이다. 문법을 작성하면 바로 일반적으로 보이는 모습으로 변하여 처음 작성할 때 많은 도움을 주며, 복잡한 문법이나 이미지를 드래그 앤 드랍으로 적용이 가능하다.
 
-![setting](markdown.assets/setting.PNG)
+<img src="markdown.assets/setting.PNG" alt="setting" style="zoom:50%;" />
 
 스누피 사진을 한장 가져왔다.
 
 Typora에 끌어다놓으면
 
-![snoopy](markdown.assets/snoopy.png)
+<img src="markdown.assets/snoopy.png" alt="snoopy" style="zoom: 25%;" />
 
 ![assets](markdown.assets/assets-16570832044332.PNG)
 
