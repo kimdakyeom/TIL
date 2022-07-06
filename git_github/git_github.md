@@ -63,7 +63,7 @@ $ git log --oneline // 커밋 상태 한줄로 확인
   - staged : 수정한 파일을 곧 커밋할 것이라고 표시한 상태
   - committed : 커밋이 된 상태
 
-<img src="git.assets/area.png" alt="area" style="zoom:50%;" />
+![area](git_github.assets/area.png)
 
 - ① -> ② : add 명령어
 
@@ -71,7 +71,7 @@ $ git log --oneline // 커밋 상태 한줄로 확인
 
 ## 라이프 사이클
 
-<img src="git.assets/lifecycle.png" alt="lifecycle" style="zoom:50%;" />
+![lifecycle](git_github.assets/lifecycle.png)
 
 - Untracked : 아무것도 건드리지 않은 상태
 - Unmodified : 수정 안 된 상태
@@ -106,7 +106,7 @@ $ git config user.name
 >
 > - 로컬 저장소의 버전을 원격저장소로 보낸다.
 
-![computer](git.assets/computer-16571176011124.PNG)<img src="git.assets/arrow.png" alt="computer" style="zoom:25%;" />![github](git.assets/github-16571175921563.PNG)
+![computer-16571176011124](git_github.assets/computer-16571176011124.PNG)![right_arrow](git_github.assets/right_arrow.png)![github-16571175921563](git_github.assets/github-16571175921563.PNG)
 
 ```bash
 $ git push '파일명'
@@ -114,7 +114,7 @@ $ git push '파일명'
 
 - 원격저장소의 버전을 로컬 저장소로 가져온다.
 
-![github](git.assets/github-16571175921563.PNG)<img src="git.assets/arrow.png" alt="computer" style="zoom:25%;" />![computer](git.assets/computer-16571176011124.PNG)
+![github](git_github.assets/github.PNG)![right_arrow-16571230494651](git_github.assets/right_arrow-16571230494651.png)![computer-16571176011124-16571230964142](git_github.assets/computer-16571176011124-16571230964142.PNG)
 
 ```bash
 $ git pull '파일명'
