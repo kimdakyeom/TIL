@@ -4,20 +4,20 @@
 
 ## CLI란
 
-> CLI는 명령 기반의 인터페이스이다.
+> **CLI는 명령 기반의 인터페이스이다.**
 >
 > 참고 - GUI : 그래픽 기반의 인터페이스
 
 ### 디렉토리 관리
 
-- pwd(print working directory) : 현재 디렉토리 출력
-- cd 디렉토리이름(change directory) : 디렉토리 이동
-  - . : 현재 디렉토리, .. : 상위 디렉토리
-- ls(list) : 목록
-- mkdir(make directory) : 디렉토리 생성
-- touch : 파일 생성
-- rm 파일명 : 파일 삭제하기
-  - rm -r 폴더명 : 폴더 삭제하기
+- `pwd(print working directory)` : 현재 디렉토리 출력
+- `cd 디렉토리이름(change directory)` : 디렉토리 이동
+  - `.` : 현재 디렉토리,` ..` : 상위 디렉토리
+- `ls(list` : 목록
+- `mkdir(make directory)` : 디렉토리 생성
+- `touch` : 파일 생성
+- `rm 파일명` : 파일 삭제하기
+  - `rm -r 폴더명` : 폴더 삭제하기
 
 ## 분산버전관리 - git
 
@@ -73,8 +73,8 @@ $ git log --oneline // 커밋 상태 한줄로 확인
 
 ![lifecycle](git_github.assets/lifecycle.png)
 
-- Untracked : 아무것도 건드리지 않은 상태
-- Unmodified : 수정 안 된 상태
+- Untracked : 파일을 새로 만든 상태
+- Unmodified : commit된 상태
 - Modified : 수정 된 상태
 - Staged : add 후 staging 상태
 
@@ -90,19 +90,27 @@ $ git config —global -l
 $ git config user.name
 ```
 
-- —system
+- `—system`
   - /etc/gitconfig
   - 시스템의 모든 사용자와 모든 저장소에 적용(관리자 권한)
-- —global 
+- `—global `
   - ~/.gitconfig
   - 현재 사용자에게 적용되는 설정
-- —local
+- `—local`
   - .git/config
   - 특정 저장소에만 적용되는 설정
 
+## 기타 git 관리
+
+- `.gitkeep` : 빈 파일
+  - git은 빈 폴더를 만들었을 때 의미가 없기 때문에 수정 사항을 반영하지 않는다. 따라서 빈 폴더에 어떠한 파일이라도 만들어야하는데, 이 때 .gitkeep을 만들면 수정사항으로 받아드려 업데이트가 가능하다.
+
+- `.gitignore` : git이 추적하지 않는 파일을 관리하는 폴더
+  - git을 관리할 때 추적하지 않았으면 하는 파일이 분명히 있을 것이다. 그럴 때 .gitignore 폴더에 해당 파일들을 넣어놓으면 git이 추적하지 않는다.
+
 ## 원격저장소 - github
 
-> github - 버전을 관리한다.
+> github은 버전을 관리한다.
 >
 - 로컬 저장소의 버전을 원격저장소로 보낸다.
 
@@ -430,9 +438,74 @@ Unmerged paths:
 (master) $ git branch -d feature/test
 ```
 
-## 전체 동작 과정
+## Pull Request
 
-![whole](git_github.assets/whole.PNG)
+> push 권한이 없는 오픈 소스 프로젝트에 기여할 때 사용한다.
+>
+> 당황스러운 코드 충돌을 줄일 수 있다.
+
+### 방법
+
+#### 1. Fork
+
+Upstream Repository를 자신의 저장소로 Fork(Origin Repository)한다.
+
+#### 2. clone
+
+fork로 생성한 Repository에서 `clone or download` 버튼을 누르고 나오는 URL을 복사한다.
+
+```bash
+$ git clone <복사한 URL>
+```
+
+#### 3. 내 컴퓨터에 생성된 로컬저장소에 원격저장소 추가
+
+```bash
+$ git remote add origin <원본 저장소 URL>
+// 원격 저장소 확인
+$ git remote -v
+```
+
+#### 4. branch 생성
+
+```bash
+// 브랜치 생성 및 이동
+$ git checkout -b <branch 이름>
+// 브랜치 리스트
+& git branch
+```
+
+#### 5. 코드 작업 후 add/commit/push
+
+```bash
+$ git add .
+$ git commit -m 'massege'
+$ git push origin develop
+```
+
+#### 6. Pull Request 생성
+
+- github 저장소 상단에 `Compare & pull request` 버튼이 활성화 된다.
+
+- 버튼을 누르고, PR 메세지를 작성하여 `Cretae pull request` 버튼을 누르면 풀 리퀘스트를 생성하게 된다.
+
+#### 7. Merge Pull Request
+
+- Pull Request를 받은 원본 저장소 관리자는 코드 변경 내용을 확인하고 Merge 여부를 결정한다.
+
+- 원작자가 승인을 하면 Merge Confirm으로 원본 저장소에 변경된 사항이 반영되고, pull request의 상태는 closed로 변경된다.
+
+- 원작자가 거절하면 Reject된다.
+
+#### 8. Merge 이후 branch 삭제
+
+```bash
+$ git branch -d develop
+```
+
+## git & github 전체 동작 과정
+
+<img src="git_github.assets/whole.PNG" alt="whole" style="zoom:150%;" />
 
 ## REFERENCE
 
