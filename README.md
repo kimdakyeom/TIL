@@ -13,6 +13,7 @@
 - [파이썬 객체지향 프로그래밍 심화 - 0720](./python/python_OOP_advanced.md)
 - [파이썬 심화 함수 - 0721](./python/python_advanced.md)
 - [알고리즘 시간복잡도 - 0726](./algorithm/algorithm_bigO.md)
+- [알고리즘 문자열 - 0727](./algorithm/algorithm_string.md)
 
 
 ### 📌매일매일 올립니다
