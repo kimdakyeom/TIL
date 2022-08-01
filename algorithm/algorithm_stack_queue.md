@@ -41,12 +41,12 @@
 - `pop()` : 리스트의 마지막 요소 값 제거
 - `appendleft()` : 리스트의 첫번째 요소 값 추가
 - `popleft()` : 리스트의 첫번째 요소 값 제거
+
 ```python
 from collections import deque
 # collections 모듈을 사용해서 deque을 활용할 수 있다.
 ```
 ## 잡담
 ![stack_queue](algorithm_stack_queue.assets/stack_queue.PNG)
-```
 
 누가 이 짤을 보내줬는데 너무 웃기고, 스택과 큐의 개념에 딱 적당한 짤이라서 가져와봤다.
