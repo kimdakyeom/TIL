@@ -15,6 +15,7 @@
 - [알고리즘 시간복잡도, 리스트 - 0726](./algorithm/algorithm_bigO.md)
 - [알고리즘 문자열 - 0727](./algorithm/algorithm_string.md)
 - [알고리즘 딕셔너리 - 0728](./algorithm/algorithm_dictionary.md)
+- [알고리즘 스택&큐 - 0801](./algorithm/algorithm_stack_queue.md)
 
 
 ### 📌매일매일 올립니다
