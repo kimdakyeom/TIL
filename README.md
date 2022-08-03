@@ -17,5 +17,6 @@
 - [알고리즘 딕셔너리 - 0728](./algorithm/algorithm_dictionary.md)
 - [알고리즘 스택&큐 - 0801](./algorithm/algorithm_stack_queue.md)
 - [알고리즘 힙&셋 - 0802](./algorithm/algorithm_heap_set.md)
+- [알고리즘 2차원 리스트 - 0803](./algorithm/algorithm_2d_list.md)
 
 ### 📌매일매일 올립니다
