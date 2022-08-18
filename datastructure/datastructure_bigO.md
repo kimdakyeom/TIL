@@ -1,4 +1,4 @@
-# algorithm 시간 복잡도 & 빅오 표기법
+# datastructure 시간 복잡도 & 빅오 표기법
 ## 알고리즘의 시간 복잡도
 > 시간복잡도(Time Complexitiy)란?
 >
@@ -9,7 +9,7 @@
 - 효율적인 알고리즘 방법을 고민하는 것 = 시간 복잡도를 고민하는 것
 - 이 시간 복잡도는 주로 빅-오 표기법을 사용해 나타낸다.
 ## 빅오(Big-O) 표기법
-![bigO](algorithm_bigO.assets/bigO.PNG)
+![bigO](datastructure_bigO.assets/bigO.PNG)
 ### 빅오 알고리즘 예시
 - O(1): 단순계산 -> a + b, 100 * 200
 - O(logN): 이진탐색(Binary Search), 분할정복(Divide & Conquer)
@@ -29,7 +29,7 @@
 ### 리스트의 내장 함수, 메서드의 시간 복잡도 확인
 > 파이썬에 있는 여러 내장 함수를 잘못 남용했다가는 시간 초과의 원인이 되기도 한다.
 
-![list_bigO](algorithm_bigO.assets/list_bigO.PNG)
+![list_bigO](datastructure_bigO.assets/list_bigO.PNG)
  
  - **Insert 연산, Del 연산, Remove 연산, 특정 원소의 여부를 검사하는 x in s 같은 경우** 모두 Time Complexity가 O(1)이 아니라 O(N)이다.
  - 이런 함수의 Time Complexity를 고려한 상태에서 더 효율적으로 코드를 바꾸면 시간 초과가 해결되는 경우도 있다.

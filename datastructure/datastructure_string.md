@@ -1,6 +1,6 @@
-# algorithm 문자열
+# datastructure 문자열
 ## 문자열 슬라이싱
-![index](algorithm_string.assets/index.PNG)
+![index](datastructure_string.assets/index.PNG)
 ```python
 s = 'abcdefghi'
 s[2:5:2] # 'ce'
@@ -71,7 +71,7 @@ print(".".join(word))
 ## 아스키(ASCII) 코드
 > 컴퓨터는 문자를 아스키 코드로 저장한다.
 
-![ascii](algorithm_string.assets/ascii.PNG)
+![ascii](datastructure_string.assets/ascii.PNG)
 ### `ord(문자)`
 - 문자를 아스키코드로 변환하는 내장함수
 ```python

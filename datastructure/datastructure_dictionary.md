@@ -1,8 +1,8 @@
-# algorithm 딕셔너리
+# datastructure 딕셔너리
 ## HashTable
 > (Key, Value)로 데이터를 저장하는 자료구조 중 하나로 빠르게 데이터를 검색할 수 있는 자료구조
 
-![dictionary](algorithm_dictionary.assets/hash_table.PNG)
+![dictionary](datastructure_dictionary.assets/hash_table.PNG)
 - 내부적으로 배열(버킷) 사용하여 데이터를 저장한다.
 - 이러한 구조로 데이터를 저장하면 Key값으로 데이터를 찾을 때 해시 함수를 1번만 수행하면 되므로 매우 빠르게 데이터를 저장/삭제/조회할 수 있다.
 - 해시테이블의 평균 시간복잡도는 O(1)이다.

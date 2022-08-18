@@ -1,4 +1,4 @@
-# algorithm 힙, 셋
+# datastructure 힙, 셋
 ## 힙(Heap)
 > 최대값 또는 최소값을 빠르게 찾아내도록 만들어진 데이터구조
 >
@@ -8,7 +8,7 @@
 ### 우선순위 큐(Priority Queue)
 > 우선순위(중요도, 크기 등 순서 이외의 기준)를 기준으로 가장 우선순위가 높은 데이터가 가장 먼저 나가는 방식
 
-![PQ](algorithm_heap_set.assets/PQ.PNG)
+![PQ](datastructure_heap_set.assets/PQ.PNG)
 
 - 우선순위 큐를 구현하는 방법
   - 배열(Array)
@@ -35,11 +35,11 @@
 import heapq
 ```
 ### 큐 vs 힙
-![queue](algorithm_stack_queue.assets/queue.PNG)
+![queue](datastructure_stack_queue.assets/queue.PNG)
 
 - 가장 오래된 데이터부터 가장 최신의 데이터 차례대로 리스트에 들어간다.
 - 가장 오래된 데이터를 뺄 수 있고, 가장 최신의 데이터를 넣을 수 있다.
-![heap](algorithm_heap_set.assets/heap.PNG)
+![heap](datastructure_heap_set.assets/heap.PNG)
 
 - 데이터를 넣으면 가장 작은 데이터가 가장 왼쪽으로 정렬된다.
 - 나머지 값들은 순서대로 정렬되지 않는다.
