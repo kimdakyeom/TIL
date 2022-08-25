@@ -22,6 +22,6 @@
 - [알고리즘 그래프 - 0809](./algorithm/algorithm_graph.md)
 - [알고리즘 DFS - 0810](./algorithm/algorithm_DFS.md)
 - [데이터베이스 - 0816~0822](./database/database.md)
-- [데이터베이스 심화 - 0824](./database/database_advanced.md)
+- [데이터베이스 심화 - 0824~0825](./database/database_advanced.md)
 
 ### 📌매일매일 올립니다
