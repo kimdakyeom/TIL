@@ -4,7 +4,7 @@ Syllaverse의 커리큘럼 탭을 보고 어떤 구조인지 ERD를 자유롭게
 
 주요 Entity는 사용자, 강의, 과제 등입니다.
 
-![syllaverse](db_practice_0823.assets/syllaverse.PNG)
+![syllaverse](db_practice_0823.assets/syllaverse.png)
 
 ### 2. 대학교 학사 관리 시스템
 
@@ -19,7 +19,7 @@ Syllaverse의 커리큘럼 탭을 보고 어떤 구조인지 ERD를 자유롭게
 - 예) 마케팅 원론 - 홍길동 교수, 마케팅 원론 - 김철수 교수, …
 - 학생은 강의를 수강신청하며, 여러 강의를 동시에 들을 수 있습니다.
 
-![colleage](db_practice_0823.assets/colleage.PNG)
+![colleage](db_practice_0823.assets/colleage.png)
 
 ### 3. 실제 서비스 분석 (선택
 
@@ -27,4 +27,4 @@ Syllaverse의 커리큘럼 탭을 보고 어떤 구조인지 ERD를 자유롭게
 
 (예시) **Instagram, Melon, Netflix, 오늘의집 등**
 
-![netflix](db_practice_0823.assets/netflix.PNG)
+![netflix](db_practice_0823.assets/netflix.png)
