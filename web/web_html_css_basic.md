@@ -181,7 +181,7 @@
   - HTML 문서에 대한 모델을 구성
   - HTML 문서 내의 각 요소에 접근 / 수정에 필요한 프로퍼티와 메서드를 제공
 
-![DOM](web_html_css_basic.assets/DOM.png)
+![DOM](web_html_css_basic.assets/DOM.PNG)
 
 ## CSS 기초
 > Cascading Style Sheets, 스타일을 지정하기 위한 언어
@@ -333,11 +333,11 @@ h1 {
 ### CSS with 개발자 도구
 - `styles` : 해당 요소에 선언된 모든 CSS, 취소된 CSS까지 나열됨으로 내용이 굉장히 길고 복잡함
 
-![styles](web_html_css_basic.assets/styles.png)
+![styles](web_html_css_basic.assets/styles.PNG)
 
 - `computed` : 해당 요소에 최종 계산된 CSS, 디자인대로 퍼블리싱되었는지 한눈에 확인 가능
 
-![computed](web_html_css_basic.assets/computed.png)
+![computed](web_html_css_basic.assets/computed.PNG)
 
 ### CSS 기초 선택자
 - 요소 선택자
