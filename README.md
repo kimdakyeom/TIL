@@ -23,5 +23,6 @@
 - [알고리즘 DFS - 0810](./algorithm/algorithm_DFS.md)
 - [데이터베이스 - 0816~0822](./database/database.md)
 - [데이터베이스 심화 - 0823~0825](./database/database_advanced.md)
+- [웹 HTML&CSS 기초 - 0829](./web/web_html_css_basic.md)
 
 ### 📌매일매일 올립니다
