@@ -1,4 +1,4 @@
-# 마크다운
+# markdown
 
 > plain text 기반의 마크업 언어
 

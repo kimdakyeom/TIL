@@ -1,0 +1,48 @@
+.card {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card_img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.com_name {
+    color: lightslategrey;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+}
+
+.prod_name {
+    font-size: 15px;
+    color: #1C1C1C;
+    letter-spacing: -0.06em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.discount {
+    color: deepskyblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rate {
+    color: #1C1C1C;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.review {
+    color: lightslategrey;
+    font-size: 12px;
+    font-weight: bold;
+}
