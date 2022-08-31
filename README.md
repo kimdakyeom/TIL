@@ -19,6 +19,6 @@
 |7|8</br>[알고리즘 완전탐색1](./algorithm/algorithm_exhaustive_search_1.md)|9</br>[알고리즘 그래프](./algorithm/algorithm_graph.md)|10</br>[알고리즘 DFS](./algorithm/algorithm_DFS.md)|11</br>특강|12</br>모의고사|13|
 |14|15</br>휴강|16</br>[데이터베이스 01](./database/database01.md)</br>[실습](./database/db_practice_0816/)|17</br>[데이터베이스 02](./database/database02.md)</br>[실습](./database/db_practice_0817/)|18</br>[데이터베이스 03](./database/database03.md)</br>[실습](./database/db_practice_0818/)|19</br>[데이터베이스 04](./database/database04.md)</br>[실습](./database/db_practice_0819/)|20|
 |21|22</br>[데이터베이스 05](./database/database05.md)</br>[실습](./database/db_practice_0822/)|23</br>[데이터베이스 심화 01](./database/database_advanced01.md)</br>[실습](./database/db_practice_0823/)|24</br>[데이터베이스 심화 02](./database/database_advanced02.md)</br>[실습](./database/db_practice_0824/)|25</br>[데이터베이스 심화 03](./database/database_advanced03.md)</br>[실습](./database/db_practice_0825/)|26</br>특강|27|
-|28|29</br>[웹 HTML&CSS 기초](./web/web_html_css_basic.md)|30</br>[웹 CSS](./web/css.md)</br>[실습](./web/web_practice_0830/)|31||||
+|28|29</br>[웹 HTML&CSS 기초](./web/web_html_css_basic.md)|30</br>[웹 CSS 01](./web/css01.md)</br>[실습](./web/web_practice_0830/)|31</br>[웹 CSS 02](./web/css02.md)||||
 
 ### 📌매일매일 올립니다

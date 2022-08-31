@@ -1,4 +1,4 @@
-# CSS
+# CSS 01
 ## CSS 기본 스타일
 ### 크기 단위
 - px(픽셀)
@@ -144,7 +144,7 @@ p { color: hsla(120, 100% 0.5);}
 ### CSS 원칙 1
 > 모든 요소는 네모(박스모델)이고, 위에서부터 아래로, 왼쪽에서 오른쪽으로 쌓인다. (좌측 상단에 배치)
 
-![css_principle](css.assets/css_principle.PNG)
+![css_principle](css01.assets/css_principle.PNG)
 ### Box model
 - 모든 HTML 요소는 box 형태로 되어있다.
 - 하나의 박스는 네 부분(영역)으로 이루어진다.
@@ -153,7 +153,7 @@ p { color: hsla(120, 100% 0.5);}
   - padding
   - content
 
-![box_model](css.assets/box_model.PNG)
+![box_model](css01.assets/box_model.PNG)
 ```css
  /* padding - 상하좌우 */
 .padding {
@@ -200,7 +200,7 @@ p { color: hsla(120, 100% 0.5);}
 - 다만, 우리가 일반적으로 영역을 볼 때는 border까지의 너비를 100px 보는 것을 원함
   - 그 경우 box-sizing을 border-box로 설정
 
-![box_sizing](css.assets/box_sizing.PNG)
+![box_sizing](css01.assets/box_sizing.PNG)
 
 ## CSS Display
 ### CSS 원칙 2
@@ -226,11 +226,11 @@ p { color: hsla(120, 100% 0.5);}
   - 이와 비슷한 visibility: hidden은 해당 요소가 공간은 차지하나 화면에 표시만 하지 않는다.
 #### 속성에 따른 수평 정렬
 - `margin-right: auto;`, `text-align: left;`
-![left](css.assets/left.PNG)
+![left](css01.assets/left.PNG)
 - `margin-left: auto;`, `text-align: right;`
-![right](css.assets/right.PNG)
+![right](css01.assets/right.PNG)
 - `margin-right: auto; margin-left: auto`, `text-align: center;`
-![center](css.assets/center.PNG)
+![center](css01.assets/center.PNG)
 
 ## REFERENCE
 [display 속성]( https://developer.mozilla.org/ko/docs/Web/CSS/display)
