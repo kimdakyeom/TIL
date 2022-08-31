@@ -157,7 +157,7 @@
     -  해당 속성은 컨테이너에 적용하는 것이 아니라 개별 아이템에 적용
 
   ![align_self](css02.assets/align_self.PNG)
-  
+
   - stretch (기본 값) : 컨테이너를 가득 채움
   - flex-start : 위
   - flex-end : 아래
@@ -175,3 +175,9 @@
 <div class="flex-item order-2">4</div>
 ```
 ![flex_grow_order](css02.assets/flex_grow_order.PNG)
+
+## 속성 선언 순서
+![char](css02.assets/char.PNG)
+
+## REFERENCE
+[속성 선언 순서 - NHN 마크업 코딩 컨벤션](https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf)

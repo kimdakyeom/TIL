@@ -1,0 +1,60 @@
+/* 아래에 CSS를 작성해주세요. */
+.all_about {
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.title {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    width: 900px;
+    height: 900px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_1 {
+    box-sizing: border-box;
+    width: 33.3%;
+    padding: 10px;
+}
+
+.card_2 {
+    box-sizing: border-box;
+    width: 33.3%;
+    padding: 10px;
+}
+
+.card_img {
+    border-radius: 5%;
+    width: 100%;
+}
+
+.description {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.description_install {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: dimgrey;
+    font-size: 11px;
+}
+
+.description_title {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.description_content {
+    color: dimgrey;
+    font-size: 10px;
+    letter-spacing: -0.12em;
+}
