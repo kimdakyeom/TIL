@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1280px;
+  color: #333333;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.nav-logo {
+  padding: 1rem;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  padding: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.nav-link:hover {
+  color: salmon;
+}
+
+.banner {
+  height: 700px;
+  background-image: url(../assets/apparel.jpeg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.body-about {
+  display: flex;
+  margin: 5rem 10rem;
+}
+
+.body-about-img {
+  width: 500px;
+  border-radius: 10%;
+}
+
+.body-about-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.body-about-content {
+  margin-left: 2rem;
+}
+
+.body-about-text {
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.body-more-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.body-more-items {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.body-more-item-img {
+  width: 64px;
+  height: 64px;
+  display: block; 
+  margin: 0px auto;
+  margin-bottom: 1rem;
+}
+
+.body-more-item-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.body-more-item-content {
+  text-align: center;
+}
+
+.topButton {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+.product-list {
+  display: flex;
+  width: 900px;
+  height: 600px;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  box-sizing: border-box;
+  width: 290px;
+  height: 290px;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+.card-img {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.card-content {
+  vertical-align: middle;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
