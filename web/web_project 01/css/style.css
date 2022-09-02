@@ -1,0 +1,99 @@
+body {
+    box-sizing: border-box;
+  }
+  
+  .navigator {
+   display: flex;
+   position: sticky;
+   top: 0;
+   height: 80px;
+   padding: 0 40px;
+   justify-content: space-between;
+   align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  .nav-main {
+    display: flex;
+  }
+  
+  .nav-link {
+    color: black;
+  }
+  
+  .nav-title {
+    padding: 0 25px;
+  }
+  
+  .banner {
+    display: flex;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .content{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .genre-list {
+    width: 20%;
+  }
+  
+  .content-list {
+    padding-left: 0;
+  }
+  
+  .content-link{
+    color: black;
+  }
+
+  .movie-list {
+    width: 80%;
+    height: 40rem;
+    padding: 24px;
+    text-align: center;
+    background-color: lightgray;
+  }
+  
+  .movie-items {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .movie-item {
+    padding: 1rem;
+  }
+  
+  .movie-item-img {
+    width: 300px;
+    border-radius: 10%;
+  }
+  
+  .footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
