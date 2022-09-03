@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'GothicA1-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
-    box-sizing: border-box;
+  font-family: 'GothicA1-Light';
+  box-sizing: border-box;
   }
   
   .navigator {
@@ -10,6 +18,8 @@ body {
    padding: 0 40px;
    justify-content: space-between;
    align-items: center;
+   background-color: white;
+   z-index: 1;
   }
   
   ul {
@@ -37,56 +47,110 @@ body {
     height: 320px;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/banner.PNG");
   }
   
   .title {
     font-size: 2rem;
     font-weight: bold;
+    color: rgb(255, 204, 159);
   }
   
   .content{
     display: flex;
     width: 100%;
     padding: 1rem;
+    margin-bottom: 3rem;
   }
   
   .genre-list {
+    display: flex;
+    flex-direction: column;
     width: 20%;
+    height: 15rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    justify-content: space-around;
+    border: 3px solid rgb(254, 239, 227);
+    border-radius: 1%;
+    text-align: center;
   }
   
-  .content-list {
+  .content-lists {
     padding-left: 0;
+  }
+
+  .content-list {
+    padding: 0.2rem 0;
   }
   
   .content-link{
     color: black;
   }
 
+  a:hover {
+    color: peachpuff;
+    text-decoration: none;
+  }
+
   .movie-list {
     width: 80%;
-    height: 40rem;
+    height: 60rem;
     padding: 24px;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(254, 239, 227);
   }
   
   .movie-items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   
   .movie-item {
-    padding: 1rem;
+    position: relative;
   }
   
   .movie-item-img {
+    display: block;
     width: 300px;
-    border-radius: 10%;
+    height: 428px;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 428px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 237, 221, 0.6);
+  }
+
+  .movie-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
   }
   
-  .footer{
+  .footer {
     display: flex;
     position: fixed;
     bottom: 0;

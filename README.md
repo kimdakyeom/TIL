@@ -7,8 +7,8 @@
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 ||||||1|2|
 |3|4|5</br>개강</br>[마크다운](./markdown/markdown.md)|6</br>[깃/깃허브 01](./git_github/git_github01.md)|7</br>[깃/깃허브 02](./git_github/git_github02.md)|8</br>특강|9|
-|10|11</br>[파이썬 기초](./python/python_basic.md)|12</br>[파이썬 제어문](./python/python_control.md)|13</br>[파이썬 함수](./python/python_function.md)|14</br>[파이썬 자료구조](./python/python_datastructure.md)|15</br>[토이 프로젝트](https://github.com/kimdakyeom/01-PJT-01/tree/master/1%ED%9A%8C%EC%B0%A8/%EA%B9%80%EB%8B%A4%EA%B2%B8)|16|
-|17|18</br>[파이썬 예외처리](./python/python_exception.md)|19</br>[파이썬 객체지향 프로그래밍 기본](./python/python_OOP_basic.md)|20</br>[파이썬 객체지향 프로그래밍 심화](./python/python_OOP_advanced.md)|21</br>[파이썬 심화 함수](./python/python_advanced.md)|22</br>[토이 프로젝트](https://github.com/kimdakyeom/01-PJT-02)|23|
+|10|11</br>[파이썬 기초](./python/python_basic.md)|12</br>[파이썬 제어문](./python/python_control.md)|13</br>[파이썬 함수](./python/python_function.md)|14</br>[파이썬 자료구조](./python/python_datastructure.md)|15</br>[파이썬 - 토이 프로젝트 01](https://github.com/kimdakyeom/01-PJT-01/tree/master/1%ED%9A%8C%EC%B0%A8/%EA%B9%80%EB%8B%A4%EA%B2%B8)|16|
+|17|18</br>[파이썬 예외처리](./python/python_exception.md)|19</br>[파이썬 객체지향 프로그래밍 기본](./python/python_OOP_basic.md)|20</br>[파이썬 객체지향 프로그래밍 심화](./python/python_OOP_advanced.md)|21</br>[파이썬 심화 함수](./python/python_advanced.md)|22</br>[파이썬 - 토이 프로젝트 02](https://github.com/kimdakyeom/01-PJT-02)|23|
 |24|25</br>[알고리즘 인트로 & 입출력](./algorithm/algoritm_intro_input_print.md)|26</br>[자료구조 시간복잡도, 리스트](./datastructure/datastructure_bigO.md)|27</br>[자료구조 문자열](./datastructure/datastructure_string.md)|28</br>[자료구조 딕셔너리](./datastructure/datastructure_dictionary.md)|29</br>[모의고사 01](https://github.com/kimdakyeom/01-PJT-03/tree/master/1%ED%9A%8C%EC%B0%A8/%EA%B9%80%EB%8B%A4%EA%B2%B8)|30</br>|
 |31|||||||
 
@@ -24,7 +24,7 @@
 ### 9 September
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|||||1</br>[웹 html](./web/html.md)</br>[실습](./web/web_practice_0901/)|2</br>[토이 프로젝트](./web/web_project%2001/)|3|
+|||||1</br>[웹 html](./web/html.md)</br>[실습](./web/web_practice_0901/)|2</br>[웹 - 토이 프로젝트 01](./web/web_project%2001/)|3|
 |4|5|6|7|8|9|10|
 |11|12|13|14|15|16|17|
 |18|19|20|21|22|23|24|
