@@ -1,6 +1,6 @@
 # web project 01
 
-![my-web-page](./web-project01.assets/my-web-page.png)
+![my-web-page](./web-project01.assets/my-web-page.PNG)
 
 ## 목표
 - HTML를 통한 웹 페이지 마크업
