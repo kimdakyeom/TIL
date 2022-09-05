@@ -1,4 +1,4 @@
-# html
+# HTML 01
 ## 시맨틱 태그
 - HTML 태그가 특정 목적, 역할 및 의미적 가치(semantic value)를 가지는 것
     - h1 태그는 “이 페이지에서 최상위 제목”인 텍스트를 감싸는 역할(또는 의미)을 나타냄
@@ -11,7 +11,7 @@
     - article : 문서, 페이지, 사이트 안에서 독립적으로 구분되는 영역
     - footer : 문서 전체나 섹션의 푸터(마지막 부분)
 
-![sementic_tag](html.assets/sementic_tag.PNG)
+![sementic_tag](html01.assets/sementic_tag.PNG)
 
 ```html
 <div>
