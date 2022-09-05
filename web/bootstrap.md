@@ -503,7 +503,8 @@ text-sm-start, ...
 ```
 
 #### Font weight and italics
-![font-weight](bootstrap.assets/weight.PNG)
+
+![font-weight](bootstrap.assets/font-weight.PNG)
 ```html
 <p class="fw-bold">Bold text.</p>
 <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
