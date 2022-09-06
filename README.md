@@ -25,7 +25,7 @@
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||||1</br>[웹 html 01](./web/html01.md)</br>[실습](./web/web_practice_0901/)|2</br>[웹 토이 프로젝트 01](./web/web_project%2001/)|3|
-|4|5</br>[웹 html 02](./web/html02.md)</br>[웹 Bootstrap](./web/bootstrap.md)</br>[실습](./web/web_practice_0905/)|6|7|8|9|10|
+|4|5</br>[웹 html 02](./web/html02.md)</br>[웹 Bootstrap 01](./web/bootstrap01.md)</br>[실습](./web/web_practice_0905/)|6</br>[웹 Bootstrap 02](./web/bootstrap02.md)</br>[실습](./web/web_practice_0906/)|7|8|9|10|
 |11|12|13|14|15|16|17|
 |18|19|20|21|22|23|24|
 |25|26|27|28|29|30||

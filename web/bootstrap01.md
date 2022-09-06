@@ -1,4 +1,4 @@
-# Bootstrap
+# Bootstrap 01
 ## CDN으로 Bootstrap 시작하기
 > CDN(Content Delivery(Distribution) Network)
 >
@@ -9,7 +9,7 @@
 >
 > 외부 서버를 활용함으로써 본인 서버의 부하가 적어짐
 
-![cdn](bootstrap.assets/cdn.PNG)
+![cdn](bootstrap01.assets/cdn.PNG)
 
 - 위의 코드들을 그대로 html에 포함시키면 Bootstrap 사용 준비 끝
 
@@ -35,7 +35,7 @@
 ## Content
 ### Typography
 #### Inline text elements
-![ite](bootstrap.assets/ite.PNG)
+![ite](bootstrap01.assets/ite.PNG)
 
 ```html
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -73,7 +73,7 @@
 ```
 
 ### Tables
-![tables](bootstrap.assets/tables.PNG)
+![tables](bootstrap01.assets/tables.PNG)
 - `<table>`, `<tr>`, `<td>` 에 사용 가능
 
 ```html
@@ -121,7 +121,7 @@
 ```
 
 ### Select
-![select](bootstrap.assets/select.PNG)
+![select](bootstrap01.assets/select.PNG)
 ```html
 <select class="form-select" aria-label="Default select example">
   <option selected>Open this select menu</option>
@@ -149,7 +149,7 @@
 #### Checks and radios
 - Checks
 
-![checks](bootstrap.assets/checks.PNG)
+![checks](bootstrap01.assets/checks.PNG)
 ```html
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -167,7 +167,7 @@
 
 -Radios
 
-![radios](bootstrap.assets/radios.PNG)
+![radios](bootstrap01.assets/radios.PNG)
 ```html
 <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -195,7 +195,7 @@
 
 ## Utilities
 ### Colors
-![color](bootstrap.assets/color.PNG)
+![color](bootstrap01.assets/color.PNG)
 ### Display
 ```html
 // 양 옆으로 배치
@@ -333,15 +333,15 @@
 ```
 - `align-content-between`
 
-![between](bootstrap.assets/between.PNG)
+![between](bootstrap01.assets/between.PNG)
 
 - `align-content-around`
 
-![around](bootstrap.assets/around.PNG)
+![around](bootstrap01.assets/around.PNG)
 
 - `align-content-stretch`
 
-![stretch](bootstrap.assets/stretch.PNG)
+![stretch](bootstrap01.assets/stretch.PNG)
 
 ### Float
 ```html
@@ -359,13 +359,13 @@
 ```
 
 ### Opacity
-![opacity](bootstrap.assets/opacity.PNG)
+![opacity](bootstrap01.assets/opacity.PNG)
 ```html
 .opacity-{value}
 ```
 
 ### Overflow
-![overflow](bootstrap.assets/overflow.PNG)
+![overflow](bootstrap01.assets/overflow.PNG)
 ```html
 .overflow-auto
 .overflow-hidden
@@ -395,7 +395,7 @@ position-stick
   - `50` - for 50% edge position
   - `100` - for 100% edge position
 
-![arrange](bootstrap.assets/arrange.PNG)
+![arrange](bootstrap01.assets/arrange.PNG)
 
 ```html
 <div class="position-relative">
@@ -419,7 +419,7 @@ position-stick
 .translate-middle-y
 ```
 
-![translate](bootstrap.assets/translate.PNG)
+![translate](bootstrap01.assets/translate.PNG)
 
 ```html
 <div class="position-relative">
@@ -460,7 +460,7 @@ style="width: 120px;"
 ### Spacing (Margin and padding)
 `{property}{sides}-{size}`
 ```html
-<div class="mt-3 ms-5">bootstrap-spacing</div>
+<div class="mt-3 ms-5">bootstrap01-spacing</div>
 ```
 - `{property}`
   - `m` - for classes that set `margin`
@@ -504,7 +504,7 @@ text-sm-start, ...
 
 #### Font weight and italics
 
-![font-weight](bootstrap.assets/font-weight.PNG)
+![font-weight](bootstrap01.assets/font-weight.PNG)
 ```html
 <p class="fw-bold">Bold text.</p>
 <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
