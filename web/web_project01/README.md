@@ -1,6 +1,6 @@
 # web project 01
 
-![my-web-page](./web-project01.assets/my-web-page.PNG)
+![my-web-page](./web_project01.assets/my-web-page.PNG)
 
 ## 목표
 - HTML를 통한 웹 페이지 마크업
@@ -19,7 +19,7 @@
 ## 요구 사항
 > HTML/CSS을 활용하여 목표로 하는 웹사이트의 레이아웃을 구성합니다. 아래의 필수 사항을 제외한 요소는 자유롭게 꾸며 주세요.
 
-![web-page](./web-project01.assets/web-page.png)
+![web-page](./web_project01.assets/web-page.png)
 
 ### **HTML 기초**
 
