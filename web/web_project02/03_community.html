@@ -11,9 +11,13 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Nanum+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: black; color: aliceblue;">
 
   <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,14 +29,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./02_home.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./03_community.html">Community</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Login</a>
-            <div class="modal" id="login" tabindex="-1">
+            <div class="modal text-dark" id="login" tabindex="-1">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -71,9 +75,10 @@
     </div>
   </nav>
 
-
-
 <h1 class="Community text-center m-5">Community</h1>
+<div class="container position-relative">
+  <button type="button" class="btn btn-dark position-absolute bottom-0 end-0 mx-5 my-3" style="width: 5rem;" onclick="location.href='./04_form.html'">글 작성</button>
+</div> 
 
 <!--list group-->
 
@@ -81,17 +86,17 @@
   <div class="row">
     <aside class="col-12 col-lg-2">
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action text-primary">Boxoffice</a>
-        <a href="#" class="list-group-item list-group-item-action text-primary">Movies</a>
-        <a href="#" class="list-group-item list-group-item-action text-primary">Genres</a>
-        <a href="#" class="list-group-item list-group-item-action text-primary">Actors</a>
+        <a href="#" class="list-group-item list-group-item-dark list-group-item-action text-dark">Boxoffice</a>
+        <a href="#" class="list-group-item list-group-item-dark list-group-item-action text-dark">Movies</a>
+        <a href="#" class="list-group-item list-group-item-dark list-group-item-action text-dark">Genres</a>
+        <a href="#" class="list-group-item list-group-item-dark list-group-item-action text-dark">Actors</a>
       </div>
     </aside>
 
     <section class="col-12 col-lg-10">
       <div class="d-none d-lg-block">
-        <table class="table table-striped">
-          <thead class="table-dark">
+        <table class="table table-striped table-dark">
+          <thead>
             <tr>
               <th scope="col">영화 제목</th>
               <th scope="col">글 제목</th>
@@ -135,9 +140,9 @@
       </div>
     </section>
 
-    <article class="col-12">
+    <article class="col-12 position-relative">
       <div class="d-block d-lg-none">
-        <div class="card my-4">
+        <div class="card text-bg-dark my-4">
           <div class="card-body">
             <h5 class="card-title">쇼생크 탈출</h5>
             <h6 class="card-subtitle mb-2 text-muted">Great Movie Title</h6>
@@ -146,7 +151,7 @@
             <p>1 minutes ago</p>
           </div>
         </div>
-        <div class="card my-4">
+        <div class="card text-bg-dark my-4">
           <div class="card-body">
             <h5 class="card-title">죽은 시인의 사회</h5>
             <h6 class="card-subtitle mb-2 text-muted">Great Movie Title</h6>
@@ -155,7 +160,7 @@
             <p>1 minutes ago</p>
           </div>
         </div>
-        <div class="card my-4">
+        <div class="card text-bg-dark my-4">
           <div class="card-body">
             <h5 class="card-title">다크 나이트 라이즈</h5>
             <h6 class="card-subtitle mb-2 text-muted">Great Movie Title</h6>
@@ -164,7 +169,7 @@
             <p>1 minutes ago</p>
           </div>
         </div>
-        <div class="card my-4">
+        <div class="card text-bg-dark my-4">
           <div class="card-body">
             <h5 class="card-title">그랜드 부다페스트 호텔</h5>
             <h6 class="card-subtitle mb-2 text-muted">Great Movie Title</h6>
@@ -173,7 +178,7 @@
             <p>1 minutes ago</p>
           </div>
         </div>
-        <div class="card my-4">
+        <div class="card text-bg-dark my-4">
           <div class="card-body">
             <h5 class="card-title">her(그녀)</h5>
             <h6 class="card-subtitle mb-2 text-muted">Great Movie Title</h6>
@@ -182,7 +187,7 @@
             <p>1 minutes ago</p>
           </div>
         </div>
-        <div class="card my-4">
+        <div class="card text-bg-dark my-4">
           <div class="card-body">
             <h5 class="card-title">위대한 쇼맨</h5>
             <h6 class="card-subtitle mb-2 text-muted">Great Movie Title</h6>
@@ -191,7 +196,7 @@
             <p>1 minutes ago</p>
           </div>
         </div>
-        <div class="card my-4">
+        <div class="card text-bg-dark my-4">
           <div class="card-body">
             <h5 class="card-title">Best Movie Ever</h5>
             <h6 class="card-subtitle mb-2 text-muted">Great Movie Title</h6>
@@ -205,21 +210,24 @@
   </div>
 </div>
 
-<!--pagination-->
-<nav aria-label="...">
-  <ul class="pagination justify-content-center my-5">
-    <li class="page-item disabled">
-      <span class="page-link">Previous</span>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
 
+  <div class="d-flex justify-content-center">
+  <!--pagination-->
+  <nav aria-label="...">
+    <ul class="pagination my-5">
+      <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+  
 
   <!-- footer -->
   <footer class="footer text-center my-5">

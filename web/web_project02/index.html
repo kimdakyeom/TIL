@@ -11,9 +11,13 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Nanum+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: black; color: aliceblue;">
 
   <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,14 +29,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./02_home.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./03_community.html">Community</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Login</a>
-            <div class="modal" id="login" tabindex="-1">
+            <div class="modal text-dark" id="login" tabindex="-1">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -70,7 +74,7 @@
       </div>
     </div>
   </nav>
-
+  
 <!-- banner -->
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -100,15 +104,17 @@
 <!--cards-->   
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img src="./images/movie1.jpg" class="card-img-top">
+      <div class="card text-bg-dark">
+        <a href="./05_movie.html">
+          <img src="./images/movie1.jpg" class="card-img-top">
+        </a>
         <div class="card-body">
           <h5 class="card-title">쇼생크 탈출</h5>
           <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam deleniti corporis sequi et nisi dolorum, odio quod nemo consequatur delectus, aspernatur illo ab sapiente, unde ad recusandae molestias quae!</p>
         </div>
       </div>
     </div> <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
+      <div class="card text-bg-dark">
         <img src="./images/movie2.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">죽은 시인의 사회</h5>
@@ -116,7 +122,7 @@
         </div>
       </div>
     </div> <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
+      <div class="card text-bg-dark">
         <img src="./images/movie3.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">다크 나이트 라이즈</h5>
@@ -124,7 +130,7 @@
         </div>
       </div>
     </div> <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
+      <div class="card text-bg-dark">
         <img src="./images/movie4.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">그랜드 부다페스트 호텔</h5>
@@ -132,7 +138,7 @@
         </div>
       </div>
     </div> <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
+      <div class="card text-bg-dark">
         <img src="./images/movie5.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">her(그녀)</h5>
@@ -140,7 +146,7 @@
         </div>
       </div>
     </div> <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
+      <div class="card text-bg-dark">
         <img src="./images/movie6.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">위대한 쇼맨</h5>

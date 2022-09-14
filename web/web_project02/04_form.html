@@ -11,10 +11,13 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Nanum+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: black; color: aliceblue;">
-
   <!-- nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -70,6 +73,30 @@
       </div>
     </div>
   </nav>
+
+  <section class="container p-5">
+    <h1 class="text-center mb-5">리뷰 작성하기</h1>
+    <div class="my-3">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>영화 선택하기</option>
+        <option value="1">쇼생크 탈출</option>
+        <option value="2">죽은 시인의 사회</option>
+        <option value="3">다크나이트 라이즈</option>
+        <option value="4">그랜드 부다페스트 호텔</option>
+        <option value="5">her</option>
+        <option value="6">위대한 쇼맨</option>
+      </select>
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">리뷰 제목</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="리뷰를 작성해주세요">
+      </div>
+    <p>리뷰 내용</p>
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary mt-3">Submit</button>
+  </section>
 
   <!-- footer -->
   <footer class="text-center footer my-5">
