@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup</title>
+</head>
+<body>
+  <form action="">
+    <input type="password" name="password" id="password">
+    <input type="password" name="password_confirmation" id="password_confirmation">
+    <input type="button" onclick="test()" value="submit">
+  </form>
+
+  <script type="text/javascript">
+    function test() {
+      var p1 = document.getElementById('password').value;
+      var p2 = document.getElementById('password_confirmation').value;
+      if( p1 != p2 ) {
+        alert("비밀번호가 일치 하지 않습니다");
+        return false;
+      } else{
+        alert("비밀번호가 일치합니다");
+        return true;
+      }
+    }
+  </script>
+</body>
+</html>

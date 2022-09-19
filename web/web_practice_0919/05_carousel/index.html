@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carousel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="carousel-items">
+      <div class="carousel-item active">1</div>
+      <div class="carousel-item">2</div>
+      <div class="carousel-item">3</div>
+      <div class="carousel-item">4</div>
+    </div>
+  </div>
+    <button id="preBtn">prev</button>
+    <button id="nextBtn">next</button>
+
+  <script>
+    const nextBtn = document.querySelector('#nextBtn')
+    const preBtn = document.querySelector('#preBtn')
+    const preList = [4, 3, 2, 1]
+
+    nextBtn.addEventListener('click', function() {
+      const currentElement = document.querySelector('.active')
+      const items = document.querySelectorAll('.carousel-item')
+      const idx = [...items].indexOf(currentElement)
+      console.log(currentElement, items, idx)
+      currentElement.classList.toggle('active')
+      items[(idx+1)%items.length].classList.toggle('active')
+    })
+
+    preBtn.addEventListener('click', function() {
+      const currentElement = document.querySelector('.active')
+      const items = document.querySelectorAll('.carousel-item')
+      const idx = [...items].indexOf(currentElement)
+      console.log(currentElement, items, idx)
+      currentElement.classList.toggle('active')
+      items[(items.length+idx-1)%items.length].classList.toggle('active')
+    })
+  </script>
+</body>
+</html>

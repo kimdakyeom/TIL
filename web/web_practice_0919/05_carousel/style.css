@@ -1,0 +1,30 @@
+.carousel-items {
+    position: relative;
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.carousel-item {
+position: absolute;
+top: 0;
+width: 10rem;
+height: 10rem;
+background-color: bisque;
+display: none;
+}
+
+.active {
+display: block;
+animation: active 1.5s;
+}
+
+@keyframes active {
+0% {
+    transform: translateX(100%);
+}
+100% {
+    transform: translateX(0);
+}
+}
