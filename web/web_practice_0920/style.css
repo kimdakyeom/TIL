@@ -1,0 +1,21 @@
+.ball {
+  width: 10rem;
+  height: 10rem;
+  margin: .5rem;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  /* 컨텐츠 중앙, 수직 정렬 */
+  text-align: center;
+  line-height: 10rem;
+  /* 폰트 정리 */
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.ball-container {
+  display: flex;
+}
+
+.form-btn {
+  display: flex;
+}
