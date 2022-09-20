@@ -7,24 +7,12 @@
   <title>signup</title>
 </head>
 <body>
-  <form action="">
+  <form id="form" action="gogo">
     <input type="password" name="password" id="password">
     <input type="password" name="password_confirmation" id="password_confirmation">
-    <input type="button" onclick="test()" value="submit">
+    <button type="submit">submit</button>
   </form>
 
-  <script type="text/javascript">
-    function test() {
-      var p1 = document.getElementById('password').value;
-      var p2 = document.getElementById('password_confirmation').value;
-      if( p1 != p2 ) {
-        alert("비밀번호가 일치 하지 않습니다");
-        return false;
-      } else{
-        alert("비밀번호가 일치합니다");
-        return true;
-      }
-    }
-  </script>
+  <script type="text/javascript" defer src="./app.js"></script>
 </body>
 </html>

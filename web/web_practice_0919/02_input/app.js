@@ -1,8 +1,10 @@
-var temp;
+const button = document.querySelector('#input-btn')
+const input = document.querySelector('#input')
+const result = document.querySelector('#result')
+const num = document.createElement('div')
 
-function input() {
-  var input = document.getElementById("input").value;
-  console.log(input)
-  temp = input;
-  document.getElementById("output").value = temp;
-}
+button.addEventListener('click', function() {
+  num.innerText = input.value
+  result.append(num)
+  input.value = null
+})

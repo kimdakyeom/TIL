@@ -1,11 +1,22 @@
-function test() {
-    var p1 = document.getElementById('password').value;
-    var p2 = document.getElementById('password_confirmation').value;
-    if( p1 != p2 ) {
-      alert("비밀번호가 일치 하지 않습니다");
-      return false;
-    } else{
-      alert("비밀번호가 일치합니다");
-      return true;
-    }
+const form = document.querySelector('#form')
+const password = document.querySelector('#password')
+const password_confirmation = document.querySelector('#password_confirmation')
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault()
+  const formData = new FormData(form)
+  console.log(formData)
+  console.log(formData.get('password'))
+  console.log(formData.get('password_confirmation'))
+
+  if(formData.get('password') != formData.get('password_confirmation')) {
+    alert("비밀번호를 확인해주세요")
+    password.value = null
+    password_confirmation.value = null
   }
+  else if(formData.get('password') === formData.get('password_confirmation')) {
+    alert("제출되었습니다")
+    password.value = null
+    password_confirmation.value = null
+  }
+})

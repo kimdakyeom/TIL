@@ -13,7 +13,7 @@
 }
 
 .ball-container {
-  display: flex;
+  display: block;
 }
 
 .form-btn {
