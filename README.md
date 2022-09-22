@@ -27,7 +27,7 @@
 |||||1</br>[웹 html 01](./web/html01.md)</br>[실습](./web/web_practice_0901/)|2</br>[웹 토이 프로젝트 01](./web/web_project01/)|3|
 |4|5</br>[웹 html 02](./web/html02.md)</br>[웹 Bootstrap 01](./web/bootstrap01.md)</br>[실습](./web/web_practice_0905/)|6</br>[웹 Bootstrap 02](./web/bootstrap02.md)</br>[실습](./web/web_practice_0906/)|7</br>[웹 Bootstrap 03](./web/bootstrap03.md)</br>[실습](./web/web_practice_0907/)|8</br>[실습](./web/web_practice_0908/)|9</br>휴강|10|
 |11|12</br>휴강|13</br>[웹 토이 프로젝트 02](./web/web_project02/)|14</br>[웹 토이 프로젝트 03](./web/web_project02/)|15</br>[웹 js 01](./web/javascript01.md)|16</br>[웹 js 02](./web/javascript02.md)|17|
-|18|19</br>[웹 js 03](./web/javascript03.md)</br>[실습](./web/web_practice_0919/)|20</br>[실습](./web/web_practice_0920/)|21</br>[장고 01](./django/django01.md)</br>[장고 설치 가이드](./django/django_install_guide.md)|22|23|24|
+|18|19</br>[웹 js 03](./web/javascript03.md)</br>[실습](./web/web_practice_0919/)|20</br>[실습](./web/web_practice_0920/)|21</br>[장고 01](./django/django01.md)</br>[장고 설치 가이드](./django/django_install_guide.md)|22</br>[장고 02](./django/django02.md)</br>[실습](./django/django_practice_0922)|23|24|
 |25|26|27|28|29|30||
 
 ### 📌매일매일 올립니다

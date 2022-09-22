@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lotto</title>
+</head>
+<body>
+  <h1>이번주 로또 당첨 번호 : 
+    <span>3 11 15 29 35 44 + 10</span>
+  </h1>
+  
+  <h2>
+    {% for number in numbers1 %}
+      {{ number }}
+    {% endfor %}
+
+    <span style="color: blue;">
+      {% if cnt1 == 6 %}
+      1등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt1 == 5 and flag1 == True %}
+      2등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt1 == 5 and flag1 == False %}
+      3등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt1 == 4 %}
+      4등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt1 == 3 %}
+      5등
+      {% endif %}
+    </span>
+    <span style="color: red;">
+      {% if cnt1 == 2 or cnt1 == 1 or cnt1 == 0 %}
+      꽝
+      {% endif %}
+    </span>
+  </h2>
+
+
+  <h2>
+    {% for number in numbers2 %}
+      {{ number }}
+    {% endfor %}
+
+    <span style="color: blue;">
+      {% if cnt2 == 6 %}
+      1등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt2 == 5 and flag1 == True %}
+      2등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt2 == 5 and flag1 == False %}
+      3등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt2 == 4 %}
+      4등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt2 == 3 %}
+      5등
+      {% endif %}
+    </span>
+    <span style="color: red;">
+      {% if cnt2 == 2 or cnt2 == 1 or cnt2 == 0 %}
+      꽝
+      {% endif %}
+    </span>
+  </h2>
+
+  <h2>
+    {% for number in numbers3 %}
+      {{ number }}
+    {% endfor %}
+
+    <span style="color: blue;">
+      {% if cnt3 == 6 %}
+      1등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt3 == 5 and flag1 == True %}
+      2등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt3 == 5 and flag1 == False %}
+      3등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt3 == 4 %}
+      4등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt3 == 3 %}
+      5등
+      {% endif %}
+    </span>
+    <span style="color: red;">
+      {% if cnt3 == 2 or cnt3 == 1 or cnt3 == 0 %}
+      꽝
+      {% endif %}
+    </span>
+  </h2>
+
+  <h2>
+    {% for number in numbers4 %}
+      {{ number }}
+    {% endfor %}
+
+    <span style="color: blue;">
+      {% if cnt4 == 6 %}
+      1등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt4 == 5 and flag1 == True %}
+      2등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt4 == 5 and flag1 == False %}
+      3등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt4 == 4 %}
+      4등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt4 == 3 %}
+      5등
+      {% endif %}
+    </span>
+    <span style="color: red;">
+      {% if cnt4 == 2 or cnt4 == 1 or cnt4 == 0 %}
+      꽝
+      {% endif %}
+    </span>
+  </h2>
+
+  <h2>
+    {% for number in numbers5 %}
+      {{ number }}
+    {% endfor %}
+
+    <span style="color: blue;">
+      {% if cnt5 == 6 %}
+      1등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt5 == 5 and flag1 == True %}
+      2등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt5 == 5 and flag1 == False %}
+      3등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt5 == 4 %}
+      4등
+      {% endif %}
+    </span>
+    <span style="color: blue;">
+      {% if cnt5 == 3 %}
+      5등
+      {% endif %}
+    </span>
+    <span style="color: red;">
+      {% if cnt5 == 2 or cnt5 == 1 or cnt5 == 0 %}
+      꽝
+      {% endif %}
+    </span>
+  </h2>
+  
+</body>
+</html>
