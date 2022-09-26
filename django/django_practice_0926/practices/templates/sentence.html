@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center">
+  <h1 class="mt-3">한글 Lorem</h1>
+  <form action="/lorem" class="mx-auto mt-3" style="width: 50%;">
+    <div>
+      문단의 수
+      <br>
+      <input type="text" name="sentence" class="form-control">
+    </div>
+    <div class="mt-3">
+      문단별 단어의 수
+      <br>
+      <input type="text" name="word" class="form-control">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-dark">생성</button>
+  </form>
+</div>
+{% endblock content %}

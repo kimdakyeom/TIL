@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for result in words_result_list %}
+<p>
+  {% for word in result %}
+  {{ word }}
+  {% endfor %}
+</p>
+<hr>
+{% endfor %}
+{% endblock content %}
