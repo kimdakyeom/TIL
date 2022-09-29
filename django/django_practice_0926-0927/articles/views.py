@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Article
 
 
@@ -14,4 +14,4 @@ def create(request):
     # DB에 저장
     Article.objects.create(content=content)
 
-    return render(request, "articles/create.html", {"content": content})
+    return redirect("articles:index")

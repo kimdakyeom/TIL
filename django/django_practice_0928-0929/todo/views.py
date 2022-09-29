@@ -35,6 +35,20 @@ def modify(request, pk):
     return redirect("todo:index")
 
 
+def update(request, pk):
+    todo = Todo.objects.get(pk=pk)
+    content = request.GET.get("content")
+    priority = request.GET.get("priority")
+    deadline = request.GET.get("deadline")
+
+    todo.content = content
+    todo.priority = priority
+    todo.deadline = deadline
+
+    todo.save()
+    return redirect("todo:index")
+
+
 def delete(request, pk):
     todo = Todo.objects.get(pk=pk)
     todo.delete()

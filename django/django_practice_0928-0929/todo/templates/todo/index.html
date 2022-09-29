@@ -1,0 +1,195 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- 사용자에게 정보를 입력받을 때 -->
+<!-- form 태그 사용 -->
+<!-- action : 어떤 url을 요청할지 -->
+<div class="container my-5 text-center">
+  <h1>Todo List</h1>
+  <form action="{% url 'todo:create' %}" class="mt-3">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">내용</span>
+      <input type="text" class="form-control" name="content" maxlength="10" aria-label="Username"
+        aria-describedby="basic-addon1">
+    </div>
+    <select class="form-select mb-3" name="priority" aria-label="Default select example">
+      <option selected>우선순위</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">마감 기한</span>
+      <input type="date" class="form-control" name="deadline" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <button type="submit" class="btn btn-dark">할일 추가</button>
+  </form>
+  <hr>
+
+  <table class="table text-center align-middle">
+    <thead>
+      <tr class="align-middle">
+        <th scope="col">우선순위</th>
+        <th scope="col">할 일</th>
+        <th scope="col">생성날짜</th>
+        <th scope="col">마감기한</th>
+        <th scope="col">상태 변경</th>
+        <th scope="col">수정</th>
+        <th scope="col">삭제</th>
+
+      </tr>
+    </thead>
+    <tbody class="align-middle">
+      {% for todo in todos %}
+      {% if todo.completed == False %}
+      <tr class="align-middle">
+        <th scope="row">{{ todo.priority }}</th>
+        <td>{{ todo.content }}</td>
+        <td>{{ todo.created_at|date:"Y년 m월 d일" }}</td>
+        <td>{{ todo.deadline|date:"Y년 m월 d일" }}</td>
+        <td>
+          <a href="{% url 'todo:modify' todo.pk %}"><button type="button" class="btn"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=""
+                viewBox="0 0 16 16">
+                <path
+                  d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
+              </svg></button></a>
+        </td>
+        <td><button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+            data-bs-target="#modal{{ todo.pk }}" data-bs-whatever="@mdo">수정</button>
+          <div class="modal fade" id="modal{{ todo.pk }}" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">할 일 수정</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="{% url 'todo:update' todo.pk %}">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">내용</span>
+                      <input type="text" class="form-control" name="content" value="{{ todo.content }}" maxlength="10"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <select class="form-select mb-3" name="priority" aria-label="Default select example">
+                      {% if todo.priority == 1 %}
+                      <option value="1" selected>1</option>
+                      {% endif %}
+                      {% if todo.priority == 2 %}
+                      <option value="2" selected>2</option>
+                      {% endif %}
+                      {% if todo.priority == 3 %}
+                      <option value="3" selected>3</option>
+                      {% endif %}
+                      {% if todo.priority == 4 %}
+                      <option value="4" selected>4</option>
+                      {% endif %}
+                      {% if todo.priority == 5 %}
+                      <option value="5" selected>5</option>
+                      {% endif %}
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">마감 기한</span>
+                      <input type="date" class="form-control" name="deadline" aria-label="Username"
+                        aria-describedby="basic-addon1" value='{{ todo.deadline|date:"Y-m-d" }}'>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-outline-dark">수정</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-danger"
+            onclick="location.href='{% url 'todo:delete' todo.pk %}' ">삭제</button></td>
+
+      </tr>
+      {% endif %}
+      {% if todo.completed == True %}
+      <tr>
+        <th scope="row" class="text-decoration-line-through">{{ todo.priority }}</th>
+        <td class="text-decoration-line-through">{{ todo.content }}</td>
+        <td class="text-decoration-line-through">{{ todo.created_at|date:"Y년 m월 d일" }}</td>
+        <td class="text-decoration-line-through">{{ todo.deadline|date:"Y년 m월 d일" }}</td>
+        <td><button type="button" class="btn" onclick="location.href='{% url 'todo:modify' todo.pk %}' "><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-on"
+              viewBox="0 0 16 16">
+              <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+            </svg></button></td>
+        </td>
+        <td><button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+            data-bs-target="#modal{{ todo.pk }}" data-bs-whatever="@mdo">수정</button>
+          <div class="modal fade" id="modal{{ todo.pk }}" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">할 일 수정</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="{% url 'todo:update' todo.pk %}">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">내용</span>
+                      <input type="text" class="form-control" name="content" value="{{ todo.content }}" maxlength="10"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <select class="form-select mb-3" name="priority" aria-label="Default select example">
+                      {% if todo.priority == 1 %}
+                      <option value="1" selected>1</option>
+                      {% endif %}
+                      {% if todo.priority == 2 %}
+                      <option value="2" selected>2</option>
+                      {% endif %}
+                      {% if todo.priority == 3 %}
+                      <option value="3" selected>3</option>
+                      {% endif %}
+                      {% if todo.priority == 4 %}
+                      <option value="4" selected>4</option>
+                      {% endif %}
+                      {% if todo.priority == 5 %}
+                      <option value="5" selected>5</option>
+                      {% endif %}
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">마감 기한</span>
+                      <input type="date" class="form-control" name="deadline" aria-label="Username"
+                        aria-describedby="basic-addon1" value='{{ todo.deadline|date:"Y-m-d" }}'>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-outline-dark">수정</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td><button type="button" class="btn btn-danger"
+            onclick="location.href='{% url 'todo:delete' todo.pk %}' ">삭제</button></td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+
+    </tbody>
+  </table>
+
+</div>
+{% endblock content %}

@@ -1,3 +1,12 @@
+# 0922 Django 실습
+## 결과물
+- 오늘의 저녁
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/74820869/193033386-ace8c00b-3994-42d3-9507-0a23a2c3d3cf.gif)
+
+- 로또 번호 추첨
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/74820869/193033643-19c917ab-b405-44ca-9bba-dee8e0423f87.gif)
+
+
 ## 오늘의 저녁
 
 today-dinner 주소를 요청하면 랜덤으로 저녁 메뉴와 메뉴 이미지를 추천해주는 화면을 응답하는 프로그램을 개발합니다.

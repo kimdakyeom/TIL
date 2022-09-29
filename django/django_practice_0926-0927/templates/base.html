@@ -18,6 +18,28 @@
     * {
       font-family: 'Noto Sans KR', sans-serif;
     }
+
+    .scroll {
+      display: inline-block;
+      padding: 20px;
+      overflow-y: scroll;
+      border: 1px solid black;
+      box-sizing: border-box;
+      color: white;
+      font-family: 'Nanum Gothic';
+    }
+
+    /* 스크롤바 설정*/
+    .type::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* 스크롤바 막대 설정*/
+    .type::-webkit-scrollbar-thumb {
+      background-color: black;
+      /* 스크롤바 둥글게 설정    */
+      border-radius: 10px;
+    }
   </style>
 </head>
 

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center my-5" style="width: 60%;">
+  <h1 class="my-5">게시판</h1>
+  <table class="table text-center align-middle">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">제목</th>
+        <th scope="col">수정</th>
+        <th scope="col">삭제</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for post in posts %}
+        <th scope="row">{{ post.id }}</th>
+        <td>
+          <a href="{% url 'posts:detail' post.pk %}" class="text-decoration-none text-dark">
+            {{ post.title }}
+          </a>
+        </td>
+        <td><button type="button" class="btn btn-outline-dark"
+            onclick="location.href='{% url 'posts:edit' post.pk %}' ">수정</button></td>
+        <td><button type="button" class="btn btn-dark"
+            onclick="location.href='{% url 'posts:delete' post.pk %}' ">삭제</button></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-outline-dark" style="float: right;"
+    onclick="location.href='{% url 'posts:new' %}' ">새 글 쓰기</button>
+</div>
+{% endblock content %}

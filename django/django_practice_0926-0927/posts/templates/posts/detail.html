@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center my-5" style="width: 60%;">
+  <form action="{% url 'posts:create' %}" class="mt-5">
+    <div class="form-floating mb-3">
+      <input type="text" name="title" class="form-control" value="{{ post.title }}" readonly>
+      <label for="floatingInput">제목</label>
+    </div>
+    <div class="form-floating">
+      <textarea class="form-control" name="content" style="height: 100px" readonly>{{ post.content }}</textarea>
+      <label for="floatingTextarea2">내용</label>
+    </div>
+    <div class="my-3" style="float: right;">
+      <button type="button" class="btn btn-outline-dark mx-3"
+        onclick="location.href='{% url 'posts:index' %}' ">목록으로</button>
+    </div>
+  </form>
+</div>
+{% endblock content %}
