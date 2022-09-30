@@ -4,7 +4,7 @@
 CRUD 기능을 가진 Todo 서비스를 개발합니다.
 
 ## 결과물
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/74820869/193018140-839b721e-dc16-4e0d-8ef5-7fdd9a44aa50.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/74820869/193289790-9c01ed1b-7a2b-43cb-acb5-75a322e258b3.gif)
 
 
 ## 요구사항
