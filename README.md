@@ -30,4 +30,14 @@
 |18|19</br>[웹 js 03](./web/javascript03.md)</br>[실습](./web/web_practice_0919/)|20</br>[실습](./web/web_practice_0920/)|21</br>[장고 01](./django/django01.md)</br>[장고 설치 가이드](./django/django_install_guide.md)|22</br>[장고 02](./django/django02.md)</br>[실습](./django/django_practice_0922)|23<br>특강|24|
 |25|26</br>[장고 03](./django/django03.md)</br>[실습](./django/django_practice_0926-0927)|27</br>[장고 04](./django/django04.md)</br>[실습](./django/django_practice_0926-0927)</br>[실습](./django/django_practice_0927)|28</br>[장고 05](./django/django05.md)</br>[실습](./django/django_practice_0928-0929)|29</br>[실습](./django/django_practice_0928-0929)|30</br>[장고 페어 프로젝트 01](https://github.com/kimdakyeom/pair_1)||
 
+### 10 October
+|Sun|Mon|Tue|Wen|Thur|Fri|Sat
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|||||||1|
+|2|3</br>휴강|4</br>[장고 07](./django/django07.md)</br>[실습](https://github.com/kimdakyeom/django_1004)|5|6|7|8|
+|9|10|11|12|13|14|15|
+|16|17|18|19|20|21|22|
+|23|24|25|26|27|28|29|
+|30|31||||||
+
 ### 📌매일매일 올립니다
