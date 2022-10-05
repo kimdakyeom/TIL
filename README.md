@@ -34,7 +34,7 @@
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||||||1|
-|2|3</br>휴강|4</br>[장고 07](./django/django07.md)</br>[실습](https://github.com/kimdakyeom/django_1004)|5|6|7|8|
+|2|3</br>휴강|4</br>[장고 07](./django/django07.md)</br>[실습](https://github.com/kimdakyeom/django_1004)|5</br>[장고 08](./django/django08.md)</br>[장고 CRUD](./django/django_CRUD.md)</br>[실습](https://github.com/kimdakyeom/django_1005)|6|7|8|
 |9|10|11|12|13|14|15|
 |16|17|18|19|20|21|22|
 |23|24|25|26|27|28|29|
