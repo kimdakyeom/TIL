@@ -1,4 +1,4 @@
-# Django 08
+# Django 09
 ## Django Auth
 > Django authentication system(인증 시스템)은 인증(Authentication)과 권한(Authorization) 부여를 함께 제공한다.
 - Authentication (인증)
