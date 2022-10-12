@@ -35,7 +35,7 @@
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||||||1|
 |2|3</br>휴강|4</br>[장고 07](./django/django07.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1004)|5</br>[장고 08](./django/django08.md)</br>[장고 CRUD](./django/django_CRUD.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1005)|6</br>[실습](https://github.com/kimdakyeom/django/tree/master/1006)|7</br>[장고 페어 프로젝트 02](https://github.com/kimdakyeom/pair/tree/master/django/1007)|8|
-|9|10|11</br>[장고 09](./django/django09.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1011)|12|13|14|15|
+|9|10|11</br>[장고 09](./django/django09.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1011)|12</br>[장고 10](./django/django10.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012)|13|14|15|
 |16|17|18|19|20|21|22|
 |23|24|25|26|27|28|29|
 |30|31||||||
