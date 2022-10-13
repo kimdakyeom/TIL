@@ -1,4 +1,4 @@
-# Django 09
+# Django 10
 ## 로그인 과정
 ### HTTP
 - Hyper Text Transfer Protocol
