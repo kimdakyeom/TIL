@@ -1,25 +1,15 @@
 # ✏Today I Learned(TIL)✏
 
 ## 학습 캘린더📅
-
-### 7 July
+### 10 October
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-||||||1|2|
-|3|4|5</br>개강</br>[마크다운](./markdown/markdown.md)|6</br>[깃/깃허브 01](./git_github/git_github01.md)|7</br>[깃/깃허브 02](./git_github/git_github02.md)|8</br>특강|9|
-|10|11</br>[파이썬 기초](./python/python_basic.md)|12</br>[파이썬 제어문](./python/python_control.md)|13</br>[파이썬 함수](./python/python_function.md)|14</br>[파이썬 자료구조](./python/python_datastructure.md)|15</br>[파이썬 토이 프로젝트 01](https://github.com/kimdakyeom/python_toy_project/tree/master/project_01)|16|
-|17|18</br>[파이썬 예외처리](./python/python_exception.md)|19</br>[파이썬 객체지향 프로그래밍 기본](./python/python_OOP_basic.md)|20</br>[파이썬 객체지향 프로그래밍 심화](./python/python_OOP_advanced.md)|21</br>[파이썬 심화 함수](./python/python_advanced.md)|22</br>[파이썬 토이 프로젝트 02](https://github.com/kimdakyeom/python_toy_project/tree/master/project_02)|23|
-|24|25</br>[알고리즘 인트로 & 입출력](./algorithm/algoritm_intro_input_print.md)|26</br>[자료구조 시간복잡도, 리스트](./datastructure/datastructure_bigO.md)|27</br>[자료구조 문자열](./datastructure/datastructure_string.md)|28</br>[자료구조 딕셔너리](./datastructure/datastructure_dictionary.md)|29</br>[모의고사 01](https://github.com/kimdakyeom/algorithm_exam/tree/master/algorithm_exam01)|30</br>|
-|31|||||||
-
-### 8 August
-|Sun|Mon|Tue|Wen|Thur|Fri|Sat
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-||1</br>[자료구조 스택&큐](./datastructure/datastructure_stack_queue.md)|2</br>[자료구조 힙&셋](./datastructure/datastructure_heap_set.md)|3</br>[알고리즘 2차원 리스트 01](./algorithm/algorithm_2d_list01.md)|4</br>[알고리즘 2차원 리스트 02](https://github.com/kimdakyeom/algorithm_exam/tree/master/algorithm_exam02)|6|
-|7|8</br>[알고리즘 완전탐색1](./algorithm/algorithm_exhaustive_search_1.md)|9</br>[알고리즘 그래프](./algorithm/algorithm_graph.md)|10</br>[알고리즘 DFS](./algorithm/algorithm_DFS.md)|11</br>특강|12</br>[모의고사 03](https://github.com/kimdakyeom/algorithm_exam/tree/master/algorithm_exam03)|13|
-|14|15</br>휴강|16</br>[데이터베이스 01](./database/database01.md)</br>[실습](https://github.com/kimdakyeom/database)|17</br>[데이터베이스 02](./database/database02.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0817)|18</br>[데이터베이스 03](./database/database03.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0818)|19</br>[데이터베이스 04](./database/database04.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0819)|20|
-|21|22</br>[데이터베이스 05](./database/database05.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0822)|23</br>[데이터베이스 심화 01](./database/database_advanced01.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0823)|24</br>[데이터베이스 심화 02](./database/database_advanced02.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0824)|25</br>[데이터베이스 심화 03](./database/database_advanced03.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0825)|26</br>특강|27|
-|28|29</br>[웹 HTML&CSS 기초](./web/web_html_css_basic.md)|30</br>[웹 CSS 01](./web/css01.md)</br>[실습](https://github.com/kimdakyeom/web/tree/master/0830)|31</br>[웹 CSS 02](./web/css02.md)</br>[실습](https://github.com/kimdakyeom/web/tree/master/0831)||||
+|||||||1|
+|2|3</br>휴강|4</br>[장고 07](./django/django07.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1004)|5</br>[장고 08](./django/django08.md)</br>[장고 CRUD](./django/django_CRUD.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1005)|6</br>[실습](https://github.com/kimdakyeom/django/tree/master/1006)|7</br>[장고 페어 프로젝트 02](https://github.com/kimdakyeom/pair_2)|8|
+|9|10|11</br>[장고 09](./django/django09.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1011)|12</br>[장고 10](./django/django10.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)|13</br>[장고 11](./django/django11.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)</br>[토이 프로젝트](https://github.com/kimdakyeom/twotwo_project)|14</br>[장고 페어 프로젝트 03](https://github.com/kimdakyeom/pair_3)|8||15|
+|16|17</br>[장고 12](./django/django12.md)</br>[실습](https://github.com/kimdakyeom/django_1017)|18</br>[장고 13](./django/django13.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1018)|19</br>[장고 14](./django/django13.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1019)|20|21|22|
+|23|24|25|26|27|28|29|
+|30|31||||||
 
 ### 9 September
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
@@ -30,14 +20,23 @@
 |18|19</br>[웹 js 03](./web/javascript03.md)</br>[실습](https://github.com/kimdakyeom/web/tree/master/0919)|20</br>[실습](https://github.com/kimdakyeom/web/tree/master/0920)|21</br>[장고 01](./django/django01.md)</br>[장고 설치 가이드](./django/django_install_guide.md)|22</br>[장고 02](./django/django02.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/0922)|23<br>특강|24|
 |25|26</br>[장고 03](./django/django03.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/0926-0927)|27</br>[장고 04](./django/django04.md)</br>[실습 01](https://github.com/kimdakyeom/django/tree/master/0926-0927)</br>[실습 02](https://github.com/kimdakyeom/django/tree/master/0927)|28</br>[장고 05](./django/django05.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/0928-0929)|29</br>[실습](https://github.com/kimdakyeom/django/tree/master/0928-0929)|30</br>[장고 페어 프로젝트 01](https://github.com/kimdakyeom/pair_1)||
 
-### 10 October
+### 8 August
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|||||||1|
-|2|3</br>휴강|4</br>[장고 07](./django/django07.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1004)|5</br>[장고 08](./django/django08.md)</br>[장고 CRUD](./django/django_CRUD.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1005)|6</br>[실습](https://github.com/kimdakyeom/django/tree/master/1006)|7</br>[장고 페어 프로젝트 02](https://github.com/kimdakyeom/pair_2)|8|
-|9|10|11</br>[장고 09](./django/django09.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1011)|12</br>[장고 10](./django/django10.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)|13</br>[장고 11](./django/django11.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)</br>[토이 프로젝트](https://github.com/kimdakyeom/twotwo_project)|14</br>[장고 페어 프로젝트 03](https://github.com/kimdakyeom/pair_3)|8||15|
-|16|17</br>[장고 12](./django/django12.md)</br>[실습](https://github.com/kimdakyeom/django_1017)|18</br>[장고 13](./django/django13.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1018)|19|20|21|22|
-|23|24|25|26|27|28|29|
-|30|31||||||
+||1</br>[자료구조 스택&큐](./datastructure/datastructure_stack_queue.md)|2</br>[자료구조 힙&셋](./datastructure/datastructure_heap_set.md)|3</br>[알고리즘 2차원 리스트 01](./algorithm/algorithm_2d_list01.md)|4</br>[알고리즘 2차원 리스트 02](https://github.com/kimdakyeom/algorithm_exam/tree/master/algorithm_exam02)|6|
+|7|8</br>[알고리즘 완전탐색1](./algorithm/algorithm_exhaustive_search_1.md)|9</br>[알고리즘 그래프](./algorithm/algorithm_graph.md)|10</br>[알고리즘 DFS](./algorithm/algorithm_DFS.md)|11</br>특강|12</br>[모의고사 03](https://github.com/kimdakyeom/algorithm_exam/tree/master/algorithm_exam03)|13|
+|14|15</br>휴강|16</br>[데이터베이스 01](./database/database01.md)</br>[실습](https://github.com/kimdakyeom/database)|17</br>[데이터베이스 02](./database/database02.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0817)|18</br>[데이터베이스 03](./database/database03.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0818)|19</br>[데이터베이스 04](./database/database04.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0819)|20|
+|21|22</br>[데이터베이스 05](./database/database05.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0822)|23</br>[데이터베이스 심화 01](./database/database_advanced01.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0823)|24</br>[데이터베이스 심화 02](./database/database_advanced02.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0824)|25</br>[데이터베이스 심화 03](./database/database_advanced03.md)</br>[실습](https://github.com/kimdakyeom/database/tree/master/0825)|26</br>특강|27|
+|28|29</br>[웹 HTML&CSS 기초](./web/web_html_css_basic.md)|30</br>[웹 CSS 01](./web/css01.md)</br>[실습](https://github.com/kimdakyeom/web/tree/master/0830)|31</br>[웹 CSS 02](./web/css02.md)</br>[실습](https://github.com/kimdakyeom/web/tree/master/0831)||||
+
+### 7 July
+|Sun|Mon|Tue|Wen|Thur|Fri|Sat
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+||||||1|2|
+|3|4|5</br>개강</br>[마크다운](./markdown/markdown.md)|6</br>[깃/깃허브 01](./git_github/git_github01.md)|7</br>[깃/깃허브 02](./git_github/git_github02.md)|8</br>특강|9|
+|10|11</br>[파이썬 기초](./python/python_basic.md)|12</br>[파이썬 제어문](./python/python_control.md)|13</br>[파이썬 함수](./python/python_function.md)|14</br>[파이썬 자료구조](./python/python_datastructure.md)|15</br>[파이썬 토이 프로젝트 01](https://github.com/kimdakyeom/python_toy_project/tree/master/project_01)|16|
+|17|18</br>[파이썬 예외처리](./python/python_exception.md)|19</br>[파이썬 객체지향 프로그래밍 기본](./python/python_OOP_basic.md)|20</br>[파이썬 객체지향 프로그래밍 심화](./python/python_OOP_advanced.md)|21</br>[파이썬 심화 함수](./python/python_advanced.md)|22</br>[파이썬 토이 프로젝트 02](https://github.com/kimdakyeom/python_toy_project/tree/master/project_02)|23|
+|24|25</br>[알고리즘 인트로 & 입출력](./algorithm/algoritm_intro_input_print.md)|26</br>[자료구조 시간복잡도, 리스트](./datastructure/datastructure_bigO.md)|27</br>[자료구조 문자열](./datastructure/datastructure_string.md)|28</br>[자료구조 딕셔너리](./datastructure/datastructure_dictionary.md)|29</br>[모의고사 01](https://github.com/kimdakyeom/algorithm_exam/tree/master/algorithm_exam01)|30</br>|
+|31|||||||
 
 ### 📌매일매일 올립니다
