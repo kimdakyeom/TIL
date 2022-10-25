@@ -8,7 +8,7 @@
 |2|3</br>휴강|4</br>[장고 07](./django/django07.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1004)|5</br>[장고 08](./django/django08.md)</br>[장고 CRUD](./django/django_CRUD.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1005)|6</br>[실습](https://github.com/kimdakyeom/django/tree/master/1006)|7</br>[장고 페어 프로젝트 02](https://github.com/kimdakyeom/pair_2)|8|
 |9|10|11</br>[장고 09](./django/django09.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1011)|12</br>[장고 10](./django/django10.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)|13</br>[장고 11](./django/django11.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)</br>[토이 프로젝트](https://github.com/kimdakyeom/twotwo_project)|14</br>[장고 페어 프로젝트 03](https://github.com/kimdakyeom/pair_3)|8||15|
 |16|17</br>[장고 12](./django/django12.md)</br>[실습](https://github.com/kimdakyeom/django_1017)|18</br>[장고 13](./django/django13.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1018)|19</br>[장고 14](./django/django14.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1019)|20</br>[실습](https://github.com/kimdakyeom/django/tree/master/1020)|21</br>[장고 토이 프로젝트](https://github.com/kimdakyeom/django/tree/master/1021)|22|
-|23|24</br>[장고 15](./django/django15.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1024)|25|26|27|28|29|
+|23|24</br>[장고 15](./django/django15.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1024)|25</br>[장고 16](./django/django16.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1025)|26|27|28|29|
 |30|31||||||
 
 ### 9 September
