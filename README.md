@@ -5,7 +5,7 @@
 ### 10 October
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|||1</br>[프로젝트 소셜 로그인](./project/1_alcohol_trip/social_login.md)|2|3|4|5|
+|||1</br>[프로젝트 소셜 로그인](./project/1_alcohol_trip/social_login.md)|2</br>[프로젝트 소셜 로그인 02](./project/1_alcohol_trip/social_login2.md)|3</br>[프로젝트 카카오 맵](./project/1_alcohol_trip/kakaomap.md)|4</br>[프로젝트 페이지네이션](./project/1_alcohol_trip/pagination.md)|5</br>[프로젝트 필터링](./project/1_alcohol_trip/filter.md)|5|
 |6|7|8|9|10|11|12|
 |13|14|15|16|17|18|19|
 |20|21|22|23|24|25|26|
