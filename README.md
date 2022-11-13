@@ -6,7 +6,7 @@
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||1</br>[프로젝트 소셜 로그인](./project/1_alcohol_trip/social_login.md)|2</br>[프로젝트 소셜 로그인 02](./project/1_alcohol_trip/social_login2.md)|3</br>[프로젝트 카카오 맵](./project/1_alcohol_trip/kakaomap.md)|4</br>[프로젝트 페이지네이션](./project/1_alcohol_trip/pagination.md)|5</br>[프로젝트 필터링](./project/1_alcohol_trip/filter.md)|5|
-|6|7|8|9|10|11|12|
+|6|7</br>[프로젝트 s3, db 이동](./project/1_alcohol_trip/db_s3.md)|8<br>[프로젝트 alcohol trip](https://github.com/kimdakyeom/alcohol_trip)|9<br>[프로젝트 yammychu 기획](./project/2_yammychu/yammychu_plan.md)|10<br>[프로젝트 비동기 채팅](./project/2_yammychu/chat.md)|11|12|
 |13|14|15|16|17|18|19|
 |20|21|22|23|24|25|26|
 |27|28|29|30||||
@@ -19,7 +19,7 @@
 |9|10|11</br>[장고 09](./django/django09.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1011)|12</br>[장고 10](./django/django10.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)|13</br>[장고 11](./django/django11.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1012-1013)</br>[토이 프로젝트](https://github.com/kimdakyeom/twotwo_project)|14</br>[장고 페어 프로젝트 03](https://github.com/kimdakyeom/pair_3)|8||15|
 |16|17</br>[장고 12](./django/django12.md)</br>[실습](https://github.com/kimdakyeom/django_1017)|18</br>[장고 13](./django/django13.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1018)|19</br>[장고 14](./django/django14.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1019)|20</br>[실습](https://github.com/kimdakyeom/django/tree/master/1020)|21</br>[장고 토이 프로젝트](https://github.com/kimdakyeom/django/tree/master/1021)|22|
 |23|24</br>[장고 15](./django/django15.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1024)|25</br>[장고 16](./django/django16.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1025)|26</br>[장고 17](./django/django17.md)</br>[실습](https://github.com/kimdakyeom/django/tree/master/1026)|27</br>[장고 페어 프로젝트 04](https://github.com/kimdakyeom/pair_4)|28</br>[헤로쿠 배포 가이드](./django/django_heroku.md)</br>[장고 페어 프로젝트 04](https://github.com/kimdakyeom/pair_4)|29|
-|30|31||||||
+|30|31</br>[프로젝트 alcohol trip 기획](./project/1_alcohol_trip/alcohol_trip_plan.md)||||||
 
 ### 9 September
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
