@@ -41,6 +41,13 @@
 ### Daphne
 > django channels를 지원하기 위해 개발된 ASGI 및 ASGI-HTTP 용 HTTP, HTTP2 및 WebSocket 프로토콜 서버이다. 자동화된 프로토콜 중재를 지원한다. HTTP endpoint와 웹소켓 endpoint를 결정할 때 URL을 prefixing 하지 않아도 된다.
 
+### Channel layer
+> 의사소통 시스템으로써 많은 소비자들이 django의 다른 부분과 의사소통 할 수 있게 해준다. 소비자들은 채널 이름을 하나씩 가지고 있으며 Channel layer 를 통해 메세지를 주고 받을 수 있다.
+
+- channel
+  - channel 은 메세지를 보낼 수 있는 우편함이다. 각 채널은 고유한 이름이 있으며 누구든지 채널에 메세지를 보낼 수 있다.
+- group
+  - group 은 채널과 관련된 그룹이다. 그룹도 마찬가지로 이름을 가지며 그룹 이름을 가진 사용자는 누구나 그룹에 채널을 추가 / 삭제 가능하고 그룹의 모든 채널에게 메세지를 보낼 수 있다. 그러나 그룹에 속한 채널을 나열할 수 없다.
 ## REFERENCE
 - [장고 공식 문서](https://channels.readthedocs.io/en/latest/introduction.html)
 - [장고 채널 튜토리얼](https://channels.readthedocs.io/en/latest/tutorial/part_1.html)
