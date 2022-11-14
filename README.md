@@ -6,7 +6,7 @@
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||1</br>[프로젝트 소셜 로그인](./project/1_alcohol_trip/social_login.md)|2</br>[프로젝트 소셜 로그인 02](./project/1_alcohol_trip/social_login2.md)|3</br>[프로젝트 카카오 맵](./project/1_alcohol_trip/kakaomap.md)|4</br>[프로젝트 페이지네이션](./project/1_alcohol_trip/pagination.md)|5</br>[프로젝트 필터링](./project/1_alcohol_trip/filter.md)|5|
-|6|7</br>[프로젝트 s3, db 이동](./project/1_alcohol_trip/db_s3.md)|8<br>[프로젝트 alcohol trip](https://github.com/kimdakyeom/alcohol_trip)|9<br>[프로젝트 yammychu 기획](./project/2_yammychu/yammychu_plan.md)|10<br>[프로젝트 비동기 채팅](./project/2_yammychu/chat.md)|11|12|
+|6|7</br>[프로젝트 s3, db 이동](./project/1_alcohol_trip/db_s3.md)|8<br>[프로젝트 alcohol trip](https://github.com/kimdakyeom/alcohol_trip)|9<br>[프로젝트 yammychu 기획](./project/2_yammychu/yammychu_plan.md)|10<br>[프로젝트 비동기 채팅 01](./project/2_yammychu/chat01.md)|11<br>[프로젝트 비동기 채팅 02](./project/2_yammychu/chat02.md)|12|
 |13|14|15|16|17|18|19|
 |20|21|22|23|24|25|26|
 |27|28|29|30||||
