@@ -205,7 +205,7 @@ urlpatterns = [
     path("<str:room_name>/", views.room, name="room"),
 ]
 ```
-![](./2_yammychu.assets/1.png)
+![](./2_yammychu.assets/chat_error.png)
 > 원하는 채팅방으로 접속이 가능하고, 채팅방에서 메세지를 작성함으로 대화를 할 수 있다. 하지만 글을 입력하고 전송하면 에러가 발생한다. 아직 웹소켓 소비자가 만들어지지 않았기때문이다.
 
 ## 소비자 만들기
