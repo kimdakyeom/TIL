@@ -1,6 +1,14 @@
 # ✏Today I Learned(TIL)✏
 
 ## 학습 캘린더📅
+### 12 December
+|Sun|Mon|Tue|Wen|Thur|Fri|Sat
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|||||1<br>[프로젝트 DRF CORS](./project/3_pjt/drf_cors.md)|2|3|
+|4|5|6|7|8|9|10|
+|11|12|13|14|15|16|17|
+|18|19|20|21|22|23|24|
+|25|26|27|28|29|30|31|
 
 ### 11 November
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
@@ -8,8 +16,8 @@
 |||1</br>[프로젝트 소셜 로그인](./project/1_alcohol_trip/social_login.md)|2</br>[프로젝트 소셜 로그인 02](./project/1_alcohol_trip/social_login2.md)|3</br>[프로젝트 카카오 맵](./project/1_alcohol_trip/kakaomap.md)|4</br>[프로젝트 페이지네이션](./project/1_alcohol_trip/pagination.md)|5</br>[프로젝트 필터링](./project/1_alcohol_trip/filter.md)|5|
 |6|7</br>[프로젝트 s3, db 이동](./project/1_alcohol_trip/db_s3.md)|8<br>[프로젝트 alcohol trip](https://github.com/kimdakyeom/alcohol_trip)|9<br>[프로젝트 yammychu 기획](./project/2_yammychu/yammychu_plan.md)|10<br>[프로젝트 비동기 채팅 01](./project/2_yammychu/chat01.md)|11<br>[프로젝트 비동기 채팅 02](./project/2_yammychu/chat02.md)|12|
 |13|14<br>[프로젝트 redis](./project/2_yammychu/redis.md)|15<br>[프로젝트 ORM](./project/2_yammychu/query.md)|16<br>[프로젝트 뉴스 API](./project/2_yammychu/news_api.md)|17<br>[프로젝트 AWS EB, S3](./project/2_yammychu/aws.md)|18<br>[프로젝트 AWS EB, S3](./project/2_yammychu/aws.md)|19|
-|20|21<br>[프로젝트 redis cloud](./project/2_yammychu/redis_cloud.md)|22<br>[프로젝트 yammychu](https://github.com/kimdakyeom/YammyChu)|23|24<br>[프로젝트 pjt 기획](./project/3_pjt/pjt_plan.md)|25<br>[프로젝트 DRF 01](https://github.com/kimdakyeom/DRF-study/blob/master/1%ED%9A%8C%EC%B0%A8%20%EC%8A%A4%ED%84%B0%EB%94%94.md)|26|
-|27|28<br>[프로젝트 DRF JWT](./project/3_pjt/drf_jwt.md)|29<br>[프로젝트 DRF CRUD](./project/3_pjt/drf_crud.md)|30||||
+|20|21<br>[프로젝트 redis cloud](./project/2_yammychu/redis_cloud.md)|22<br>[프로젝트 yammychu](https://github.com/kimdakyeom/YammyChu)|23|24<br>[프로젝트 pjt 기획](./project/3_pjt/pjt_plan.md)|25<br>[프로젝트 DRF 01](https://github.com/kimdakyeom/DRF-study/tree/master/1%ED%9A%8C%EC%B0%A8%20%EC%8A%A4%ED%84%B0%EB%94%94)|26|
+|27|28<br>[프로젝트 DRF JWT](./project/3_pjt/drf_jwt.md)|29<br>[프로젝트 DRF CRUD](./project/3_pjt/drf_crud.md)|30<br>[프로젝트 DRF SOCIAL LOGIN](./project/3_pjt/drf_social.md)||||
 
 ### 10 October
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
