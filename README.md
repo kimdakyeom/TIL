@@ -5,7 +5,7 @@
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||||1<br>[프로젝트 DRF CORS](./project/3_pjt/drf_cors.md)|2<br>[프로젝트 vue login](./project/3_pjt/vue_login.md)|3|
-|4|5시리얼라이저|6|7|8|9|10|
+|4|5<br>[프로젝트 DRF serializer](./project/3_pjt/drf_serializer.md)|6|7|8|9|10|
 |11|12|13|14|15|16|17|
 |18|19|20|21|22|23|24|
 |25|26|27|28|29|30|31|
