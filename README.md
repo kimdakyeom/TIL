@@ -5,9 +5,9 @@
 |Sun|Mon|Tue|Wen|Thur|Fri|Sat
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||||1<br>[프로젝트 DRF CORS](./project/3_pjt/drf_cors.md)|2<br>[프로젝트 vue login](./project/3_pjt/vue_login.md)|3|
-|4|5<br>[프로젝트 DRF serializer](./project/3_pjt/drf_serializer.md)|6|7|8|9|10|
-|11|12|13|14|15|16|17|
-|18|19|20|21|22|23|24|
+|4|5<br>[프로젝트 DRF serializer](./project/3_pjt/drf_serializer.md)|6|7|8<br>[AWS 인프라](./aws/aws_infra.md)|9<br>[AWS 컴퓨팅 파위](./aws/aws_computing.md)|10|
+|11|12<br>[프로젝트 DRF https](./project/3_pjt/drf_https.md)|13|14|15<br>[AWS 데이터베이스](./aws/aws_database.md)|16<br>[AWS 메시지 큐](./aws/aws_messagequeue.md)|17|
+|18|19<br>[cs 싱글톤 패턴](./cs/design_pattern.md)|20|21|22|23|24|
 |25|26|27|28|29|30|31|
 
 ### 11 November
