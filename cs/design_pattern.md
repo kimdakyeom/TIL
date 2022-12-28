@@ -80,3 +80,74 @@ if __name__ == "__main__":
 - 단점
   - 의존성이 높아지며 TDD(Text Driven Development)를 할 때 걸림돌이 된다. TDD를 할 때 단위 테스트를 주로 하는데, 단위 테스트는 테스트가 서로 독립적이어야 하며 테스트를 어떤 순서로든 실행할 수 있어야한다.
   - 하지만 싱글톤 패턴은 미리 생성된 하나의 인스턴스를 기반으로 구현하는 패턴이므로 각 테스트마다 독립적인 인스턴스를 만들기 어렵다.
+
+## 팩토리 패턴
+> 객체를 사용하는 코드에서 객체 생성 부분을 떼어내 추상화한 패턴
+>
+> 상속 관계에 있는 두 클래스에서 상위 클래스가 중요한 뼈대를 결정하고, 하위 클래스에서 객체 생성에 관한 구체적인 내용을 결정하는 패턴
+
+- 상위 클래스와 하위 클래스가 분리되기 때문에 느슨한 결합을 가지며 상위 클래스에서는 인스턴스 생성 방식에 대해 전혀 알 필요가 없기 때문에 더 많은 유연성을 갖게 된다.
+- 객체 생성 로직이 따로 떼어져 있기 때문에 코드를 리팩토링하더라도 한 곳만 고칠 수 있게 되니 유지 보수성이 증가된다.
+
+![](./design_pattern.assets/factory.PNG)
+### 팩토리 패턴 구현 (파이썬)
+- 커리어 서비스와 앨범 서비스가 개별적으로 존재한다.
+- 두 서비스는 공통적으로 PersonalSection을 입력해야한다.
+- 서비스 종류에 따라 알맞는 내용을 포함하는 프로필을 생성한다.
+
+```python
+from abc import ABCMeta, abstractmethod
+
+# Product 인터페이스
+# Section 추상 클래스
+class Section(metaclass=ABCMeta):
+    @abstractmethod
+    def describe(self):
+        pass
+class PersonalSection(Section):
+    def describe(self):
+        print("Personal Section")
+class AlbumSection(Section):
+    def describe(self):
+        print("Album Section")
+class PatentSection(Section):
+    def describe(self):
+        print("Patent Section")
+class PublicationSection(Section):
+    def describe(self):
+        print("Publication Section")
+
+# Creator 추상 클래스
+class Profile(metaclass=ABCMeta):
+    def __init__(self):
+        self.sections = []
+        self.createProfile() # profile 인스텐스 생성과 동시에 메서드를 실행시킴
+    @abstractmethod
+    def createProfile(self):
+        pass
+    def getSections(self):
+        return self.sections
+    def addSections(self, section):
+        self.sections.append(section)
+
+# ConcreateCreator 클래스
+class linkedin(Profile):
+    def createProfile(self): # 해당하는 Section을 sections에 담음
+        self.addSections(PersonalSection())
+        self.addSections(PatentSection())
+        self.addSections(PublicationSection())
+class facebook(Profile):
+    def createProfile(self):
+        self.addSections(PersonalSection())
+        self.addSections(AlbumSection())
+
+# Creator 클래스를 호출하는 클라이언트
+if __name__ == '__main__':
+    profile_type = input("which Profile you'd like to create? [LinkedIn or FaceBook]")
+    profile = eval(profile_type.lower())()
+    print("Creating Profile..", type(profile).__name__)
+    print("Profile has sections --", profile.getSections())
+```
+
+![](./design_pattern.assets/facebook.PNG)
+![](./design_pattern.assets/linkedin.PNG)
