@@ -151,3 +151,173 @@ if __name__ == '__main__':
 
 ![](./design_pattern.assets/facebook.PNG)
 ![](./design_pattern.assets/linkedin.PNG)
+
+## 이터레이터 패턴
+> 이터레이터를 사용하여 컬렉션의 요소들에 접근하는 디자인 패턴
+
+- 순회할 수 있는 각기 다른 자료형의 구조와는 상관없이 이터레이터라는 하나의 인터페이스로 순회가 가능해서 코드의 효율화, 숫자형 index가 아닌 string 등 다양한 인덱스를 기반으로 순회를 쉽게 할 수 있음
+
+### 이터레이터 패턴 구현 (파이썬)
+```python
+class Item:
+    def __init__(self, name, cost):
+        self._name = name
+        self._cost = cost
+
+    def __str__(self):
+        return "(" + self._name + ", " + str(self._cost) + ")"
+
+class Array:
+    def __init__(self, items):
+        self._items = items
+
+    def __iter__(self):
+        return ArrayIterator(self)
+
+    def get_item(self, index):
+        return self._items[index]
+
+    def get_count(self):
+        return len(self._items)
+
+class ArrayIterator:
+    def __init__(self, array):
+        self._array = array
+        self._index = -1
+
+    def __next__(self):
+        self._index += 1
+        if self._index >= self._array.get_count():
+            raise StopIteration
+        return self._array.get_item(self._index)
+
+if __name__ == "__main__":
+    items = [Item("CPU", 1000), Item("Keyboard", 2000), Item("Mouse", 3000), Item("HDD", 50)]
+
+    array = Array(items)
+
+    for item in array:
+        print(str(item))
+```
+![](./design_pattern.assets/iterator.PNG)
+
+- 파이썬의 list 자료구조는 어떤 객체든 삽입될 수 있어 굳이 이렇게 iterable한 클래스를 만들 필요는 없어보인다.
+
+<hr>
+
+## 의존성주입과 의존관계역전원칙
+### 의존성주입 (Dependency Injection)
+> 메인 모듈(main mudule)이 ‘직접’ 다른 하위 모듈에 대한 의존성을 주기보다는 중간에 의존성 주입자(dependency injector)가 이 부분을 가로채 메인 모듈이 ‘간접’적으로 의존성을 주입하는 방식
+
+- 이를 통해 모듈간의 결합을 조금 더 느슨하게 만들 수 있으며 모듈을 쉽게 교체 가능한 구조로 만든다.
+
+![](./design_pattern.assets/di.PNG)
+
+### 의존관계역전원칙
+> 의존성 주입을 할 때는 의존관계역전원칙(Dependency inversion principle)이 적용된다.
+>
+> 1. 상위 모듈은 하위 모듈에 의존해서는 안 된다. 둘 다 추상화에 의존해야 한다.
+> 2. 추상화는 세부사항에 의존해서는 안 된다. 세부 사항은 추상화에 따라 달라져야한다.
+
+### 의존한다
+> A가 B에 의존한다 = B가 변하면 A에 영향을 미치는 관계 **A->B**
+
+### DIP 미적용 사례 (파이썬)
+```python
+class PngConversion:
+  def converse(data: Data):
+    # png conversion algorithm
+    return data
+
+class JPEGConversion:
+  def converse(data: Data):
+    # jpeg conversion algorithm
+    return data
+
+class Transformer:
+  def __init__(self, data: Data):
+    self.converser = PngConversion()
+    self.data = data
+  def converse(self):
+    self.converser.converse(self.data)
+```
+![](./design_pattern.assets/di1.PNG)
+- 현재 코드 에서는 Conversion 객체의 메서드를 사용하고 싶은 경우에 Transformer 클래스에 있는 코드를 수정해야한다.
+- 또한 상위 클래스의 동작이 하위 클래스의 구현에 영향을 받아 상위 클래스와 하위 클래스 사이의 강한 결합이 생긴다.
+- 의존관계역전원칙을 적용하기 위해 상위 클래스를 추상 클래스에 의존하게 만들어야 한다.
+
+### 위 사례에 DIP 적용1 (파이썬)
+```python
+from abc import ABCMeta, abstractmethod
+class Conversion(metaclass=ABCMeta):
+  @abstractmethod
+  def converse(data: Data):
+    pass
+
+class PngConversion(Conversion):
+  def converse(data: Data):
+    # png conversion algorithm
+    return data
+
+class JPEGConversion(Conversion):
+  def converse(data: Data):
+    # jpeg conversion algorithm
+    return data
+
+class Transformer:
+  def __init__(self, data: Data, converser: Conversion):
+    self.converser = converser
+    self.data = data
+
+  def converse(self):
+    self.converser.converse(self.data)
+
+Transformer(data, PngConversion()).converse()
+Transformer(data, JPEGConversion()).converse()
+```
+![](./design_pattern.assets/di2.PNG)
+- Tranformer의 생성자 인자로 추상클래스를 상속받은 클래스를 넘겨줌으로써 DI를 구현할 수 있다.
+
+### 위 사례에 DIP 적용2 (파이썬)
+```python
+import inject
+from abc import ABCMeta, abstractmethod
+class Conversion(metaclass=ABCMeta):
+  @abstractmethod
+  def converse(data: Data):
+    pass
+
+class PngConversion(Conversion):
+  def converse(data: Data):
+    # png conversion algorithm
+    return data
+
+class JPEGConversion(Conversion):
+  def converse(data: Data):
+    # jpeg conversion algorithm
+    return data
+
+class Transformer:
+
+  @inject.autoparams()
+  def __init__(self, data: Data, converser: Conversion):
+    self.converser = converser
+    self.data = data
+
+  def converse(self):
+    self.converser.converse(self.data)
+
+transformer = Transformer(data)
+transformer.converse()
+```
+- python-inject 라이브러리 사용
+### 의존성 주입의 장단점
+- 장점
+  - 모듈들을 쉽게 교체할 수 있는 구조가 된다.
+  - 단위 테스팅과 마이그레이션이 쉬워진다.
+  - 애플리케이션 의존성 방향이 좀 더 일관되어 코드를 추론하기가 쉬워진다.
+- 단점
+  - 모듈이 더 생기게 되므로 복잡도가 증가한다.
+  - 종속성 주입자체가 컴파일을 할 때가 아닌 런타임 때 일어나기 때문에 컴파일을 할 때 종속성 주입에 관한 에러를 잡기가 어려워질 수 있다.
+
+<hr>
