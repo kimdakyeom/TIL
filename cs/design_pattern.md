@@ -321,3 +321,163 @@ transformer.converse()
   - 종속성 주입자체가 컴파일을 할 때가 아닌 런타임 때 일어나기 때문에 컴파일을 할 때 종속성 주입에 관한 에러를 잡기가 어려워질 수 있다.
 
 <hr>
+
+## 전략 패턴
+> 정책 패턴(policy pattern)이라고도 하며, 객체의 행위를 바꾸고 싶은 경우 직접 수정하지 않고 전략이라고 부르는 캡슐화한 알고리즘을 컨텍스트 안에서 바꿔주면서 상호 교체가 가능하게 만드는 패턴
+
+![](./design_pattern.assets/strategy.PNG)
+
+### 전략 패턴 구현1 (파이썬)
+
+```python
+from abc import ABC, abstractmethod
+from collections import namedtuple
+
+Customer = namedtuple('Customer', 'name fidelity')
+
+
+class LineItem:
+
+    def __init__(self, product, quantity, price):
+        self.product = product
+        self.quantity = quantity
+        self.price = price
+
+    def total(self):
+        return self.price * self.quantity
+
+
+class Order:  # 콘텍스트
+
+    def __init__(self, customer, cart, promotion=None):
+        self.customer = customer
+        self.cart = list(cart)
+        self.promotion = promotion
+
+    def total(self):
+        if not hasattr(self, '__total'):
+            self.__total = sum(item.total() for item in self.cart)
+        return self.__total
+
+    def due(self):
+        if self.promotion is None:
+            discount = 0
+        else:
+            discount = self.promotion.discount(self)
+        return self.total() - discount
+
+    def __repr__(self):
+        fmt = '<Order total: {:.2f} due: {:.2f}>'
+        return fmt.format(self.total(), self.due())
+
+
+class Promotion(ABC):  # 전략
+
+    @abstractmethod
+    def discount(self, order):
+        """Return discount as a positive dollar amount"""
+
+
+class FidelityPromo(Promotion):  # 구체적인 전략 1
+    """5% discount for customers with 1000 or more fidelity points"""
+
+    def discount(self, order):
+        return order.total() * .05 if order.customer.fidelity >= 1000 else 0
+
+
+class BulkItemPromo(Promotion):  # 구체적인 전략 2
+    """10% discount for each LineItem with 20 or more units"""
+
+    def discount(self, order):
+        discount = 0
+        for item in order.cart:
+            if item.quantity >= 20:
+                discount += item.total() * .1
+        return discount
+
+
+class LargeOrderPromo(Promotion):  # 구체적인 전략 3
+    """7% discount for orders with 10 or more distinct items"""
+
+    def discount(self, order):
+        distinct_items = {item.product for item in order.cart}
+        if len(distinct_items) >= 10:
+            return order.total() * .07
+        return 0
+```
+- 구체적인 전략들 FidelityPromo, BulkItemPromo, LargeOrderPromo 클래스들이 인터페이스를 공유하고, discount() 메소드에 로직을 구현하면 전략의 추가나 변동과 독립적으로는 Promotion 클래스에서 할인 적용을 할 수 있다.
+
+### 전략 패턴 구현2 (파이썬)
+- 파이썬은 일급 함수가 가능하기 때문에 위 코드보다 더 효율적인 코드를 짤 수 있다.
+> 일급 객체(First-Class Citizen)란?
+> 다른 객체들에 일반적으로 적용 가능한 연산을 모두 지원하는 객체를 가리킨다.
+>
+> 1. 변수나 데이터 구조에 할당할 수 있다.
+> 2. 객체의 인자로 넘길 수 있다.
+> 3. 객체의 리턴 값으로 리턴이 가능해야 한다.
+
+```python
+from collections import namedtuple
+
+Customer = namedtuple('Customer', 'name fidelity')
+
+
+class LineItem:
+
+    def __init__(self, product, quantity, price):
+        self.product = product
+        self.quantity = quantity
+        self.price = price
+
+    def total(self):
+        return self.price * self.quantity
+
+
+class Order:  # 콘텍스트
+
+    def __init__(self, customer, cart, promotion=None):
+        self.customer = customer
+        self.cart = list(cart)
+        self.promotion = promotion
+
+    def total(self):
+        if not hasattr(self, '__total'):
+            self.__total = sum(item.total() for item in self.cart)
+        return self.__total
+
+    def due(self):
+        if self.promotion is None:
+            discount = 0
+        else:
+            discount = self.promotion(self)
+        return self.total() - discount
+
+    def __repr__(self):
+        fmt = '<Order total: {:.2f} due: {:.2f}>'
+        return fmt.format(self.total(), self.due())
+
+# 일급 함수 사용
+
+def fidelity_promo(order):
+    """5% discount for customers with 1000 or more fidelity points"""
+    return order.total() * .05 if order.customer.fidelity >= 1000 else 0
+
+
+def bulk_item_promo(order):
+    """10% discount for each LineItem with 20 or more units"""
+    discount = 0
+    for item in order.cart:
+        if item.quantity >= 20:
+            discount += item.total() * .1
+    return discount
+
+
+def large_order_promo(order):
+    """7% discount for orders with 10 or more distinct items"""
+    distinct_items = {item.product for item in order.cart}
+    if len(distinct_items) >= 10:
+        return order.total() * .07
+    return 0
+```
+- 일급 함수를 사용하면 전략 패턴을 인터페이스를 공유하는 클래스로 구현하는 것보다 훨씬 간결한 코드가 된다.
+- 위 예제와 달리 전략의 로직이 내부 상태가 필요하고, 복잡하다면 클래스로 구현하는 편이 좋을 수 있지만, 그렇지 않은 경우 함수로 구현하는 것이 더 가볍다.
